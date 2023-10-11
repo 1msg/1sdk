@@ -1169,7 +1169,8 @@
               "Shopping and Retail",
               "Travel and Transportation",
               "Restaurant",
-              "Other"
+              "Other",
+              ""
             ],
             "example": "Other",
             "description": "Industry of the business"

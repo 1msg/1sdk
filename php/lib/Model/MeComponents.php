@@ -282,6 +282,7 @@ class MeComponents implements ModelInterface, ArrayAccess, \JsonSerializable
     public const VERTICAL_TRAVEL_AND_TRANSPORTATION = 'Travel and Transportation';
     public const VERTICAL_RESTAURANT = 'Restaurant';
     public const VERTICAL_OTHER = 'Other';
+    public const VERTICAL_EMPTY = '';
 
     /**
      * Gets allowable values of the enum
@@ -308,6 +309,7 @@ class MeComponents implements ModelInterface, ArrayAccess, \JsonSerializable
             self::VERTICAL_TRAVEL_AND_TRANSPORTATION,
             self::VERTICAL_RESTAURANT,
             self::VERTICAL_OTHER,
+            self::VERTICAL_EMPTY,
         ];
     }
 
