@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.MeComponents
+# OneMessage.io.Model.MeComponents
 
 ## Properties
 

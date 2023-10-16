@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.GetTemplatesTemplatesInner
+# OneMessage.io.Model.GetTemplatesTemplatesInner
 
 ## Properties
 

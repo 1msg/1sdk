@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.GetMessages
+# OneMessage.io.Model.GetMessages
 
 ## Properties
 

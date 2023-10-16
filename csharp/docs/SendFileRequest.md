@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SendFileRequest
+# OneMessage.io.Model.SendFileRequest
 
 ## Properties
 

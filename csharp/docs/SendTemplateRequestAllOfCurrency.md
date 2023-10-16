@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SendTemplateRequestAllOfCurrency
+# OneMessage.io.Model.SendTemplateRequestAllOfCurrency
 
 ## Properties
 

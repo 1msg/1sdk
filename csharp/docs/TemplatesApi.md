@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.TemplatesApi
+# OneMessage.io.Api.TemplatesApi
 
 All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
@@ -21,9 +21,9 @@ Create new template for sending.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -117,9 +117,9 @@ Deleted template can not be restored.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -213,9 +213,9 @@ Send Template Message to a new or existing chat. Only one of two parameters is n
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -307,9 +307,9 @@ Get templates list
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {

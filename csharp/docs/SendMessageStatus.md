@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SendMessageStatus
+# OneMessage.io.Model.SendMessageStatus
 
 ## Properties
 

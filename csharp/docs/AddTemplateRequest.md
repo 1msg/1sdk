@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.AddTemplateRequest
+# OneMessage.io.Model.AddTemplateRequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.GetIP
+# OneMessage.io.Model.GetIP
 
 ## Properties
 

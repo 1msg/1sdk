@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.ProductsCatalogsApi
+# OneMessage.io.Api.ProductsCatalogsApi
 
 All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
@@ -19,9 +19,9 @@ Send a single product or product list to a new or existing chat. (Only if the di
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -115,9 +115,9 @@ Set Commerce Settings
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {

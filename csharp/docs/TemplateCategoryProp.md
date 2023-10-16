@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.TemplateCategoryProp
+# OneMessage.io.Model.TemplateCategoryProp
 Template category
 
 ## Properties

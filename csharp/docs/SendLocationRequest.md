@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SendLocationRequest
+# OneMessage.io.Model.SendLocationRequest
 
 ## Properties
 

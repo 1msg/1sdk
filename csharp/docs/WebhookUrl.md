@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.WebhookUrl
+# OneMessage.io.Model.WebhookUrl
 
 ## Properties
 

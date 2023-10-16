@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.Contacts
+# OneMessage.io.Model.Contacts
 
 ## Properties
 

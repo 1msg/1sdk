@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.ReadMessageRequest
+# OneMessage.io.Model.ReadMessageRequest
 
 ## Properties
 

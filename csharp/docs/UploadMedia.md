@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.UploadMedia
+# OneMessage.io.Model.UploadMedia
 
 ## Properties
 

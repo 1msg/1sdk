@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.GetAckInfo
+# OneMessage.io.Model.GetAckInfo
 
 ## Properties
 

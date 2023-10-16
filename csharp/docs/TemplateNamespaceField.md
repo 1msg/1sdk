@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.TemplateNamespaceField
+# OneMessage.io.Model.TemplateNamespaceField
 
 ## Properties
 

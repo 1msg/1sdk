@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.GetMe401Response
+# OneMessage.io.Model.GetMe401Response
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.ChannelApi
+# OneMessage.io.Api.ChannelApi
 
 All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
@@ -26,9 +26,9 @@ Get Commerce Settings
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -118,9 +118,9 @@ Get channel usage extended statistics
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -209,9 +209,9 @@ Use this edge to retrieve your profile's About info
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -301,9 +301,9 @@ Get Settings
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -393,9 +393,9 @@ Get channel usage statistics
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -489,9 +489,9 @@ Returns the status of your WhatsApp Business API client. Channel statuses:  **co
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -578,9 +578,9 @@ Get channel server IP
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -670,9 +670,9 @@ Change user info
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -767,9 +767,9 @@ Set settings
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {

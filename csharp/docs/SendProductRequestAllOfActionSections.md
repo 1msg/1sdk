@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SendProductRequestAllOfActionSections
+# OneMessage.io.Model.SendProductRequestAllOfActionSections
 
 ## Properties
 

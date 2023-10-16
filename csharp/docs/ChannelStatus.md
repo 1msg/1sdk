@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.ChannelStatus
+# OneMessage.io.Model.ChannelStatus
 
 ## Properties
 

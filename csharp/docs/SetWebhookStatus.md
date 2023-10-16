@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SetWebhookStatus
+# OneMessage.io.Model.SetWebhookStatus
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.ChatIdProp
+# OneMessage.io.Model.ChatIdProp
 
 ## Properties
 

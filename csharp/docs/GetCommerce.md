@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.GetCommerce
+# OneMessage.io.Model.GetCommerce
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SendListRequest
+# OneMessage.io.Model.SendListRequest
 
 ## Properties
 

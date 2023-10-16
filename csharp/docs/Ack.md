@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.Ack
+# OneMessage.io.Model.Ack
 
 ## Properties
 

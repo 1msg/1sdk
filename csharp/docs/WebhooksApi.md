@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.WebhooksApi
+# OneMessage.io.Api.WebhooksApi
 
 All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
@@ -17,9 +17,9 @@ Check ACKs
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -114,9 +114,9 @@ Sets the URL for receiving webhook notifications of new messages and message del
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.MessagingApi
+# OneMessage.io.Api.MessagingApi
 
 All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
@@ -22,9 +22,9 @@ Get messages list
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -131,9 +131,9 @@ Mark message as read
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -228,9 +228,9 @@ Send a contact to an existing chat. (Only if the dialogue has an Open Session). 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -324,9 +324,9 @@ Send a file to an existing chat. (Only if the dialogue has an Open Session). Onl
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -420,9 +420,9 @@ Send Interactive List Message to an existing chat. (Only if the dialogue has an 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -516,9 +516,9 @@ Send a location to an existing chat. (Only if the dialogue has an Open Session).
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {
@@ -612,9 +612,9 @@ Send a message to an existing chat. (Only if the dialogue has an Open Session). 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.Settings
+# OneMessage.io.Model.Settings
 
 ## Properties
 

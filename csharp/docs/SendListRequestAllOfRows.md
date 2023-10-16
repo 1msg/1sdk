@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SendListRequestAllOfRows
+# OneMessage.io.Model.SendListRequestAllOfRows
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SendListRequestAllOfSections
+# OneMessage.io.Model.SendListRequestAllOfSections
 
 ## Properties
 

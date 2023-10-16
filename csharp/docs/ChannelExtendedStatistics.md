@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.ChannelExtendedStatistics
+# OneMessage.io.Model.ChannelExtendedStatistics
 
 ## Properties
 

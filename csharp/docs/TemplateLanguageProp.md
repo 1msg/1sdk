@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.TemplateLanguageProp
+# OneMessage.io.Model.TemplateLanguageProp
 Template language
 
 ## Properties

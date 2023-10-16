@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Api.MediaApi
+# OneMessage.io.Api.MediaApi
 
 All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
@@ -18,9 +18,9 @@ Upload media and get mediaId. Uploaded media can be sent in template
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
+using OneMessage.io.Api;
+using OneMessage.io.Client;
+using OneMessage.io.Model;
 
 namespace Example
 {

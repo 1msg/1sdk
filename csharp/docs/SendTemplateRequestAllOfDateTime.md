@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SendTemplateRequestAllOfDateTime
+# OneMessage.io.Model.SendTemplateRequestAllOfDateTime
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SetSettings200ResponseAllOfUpdate
+# OneMessage.io.Model.SetSettings200ResponseAllOfUpdate
 
 ## Properties
 

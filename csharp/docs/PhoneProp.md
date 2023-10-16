@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.PhoneProp
+# OneMessage.io.Model.PhoneProp
 
 ## Properties
 

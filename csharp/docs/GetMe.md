@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.GetMe
+# OneMessage.io.Model.GetMe
 
 ## Properties
 

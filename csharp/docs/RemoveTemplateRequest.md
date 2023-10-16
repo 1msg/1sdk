@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.RemoveTemplateRequest
+# OneMessage.io.Model.RemoveTemplateRequest
 
 ## Properties
 

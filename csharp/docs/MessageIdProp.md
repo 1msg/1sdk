@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.MessageIdProp
+# OneMessage.io.Model.MessageIdProp
 
 ## Properties
 

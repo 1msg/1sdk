@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SendMessageRequest
+# OneMessage.io.Model.SendMessageRequest
 
 ## Properties
 

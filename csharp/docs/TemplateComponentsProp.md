@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.TemplateComponentsProp
+# OneMessage.io.Model.TemplateComponentsProp
 Array of template components
 
 ## Properties

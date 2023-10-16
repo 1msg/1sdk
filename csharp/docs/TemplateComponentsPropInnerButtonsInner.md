@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.TemplateComponentsPropInnerButtonsInner
+# OneMessage.io.Model.TemplateComponentsPropInnerButtonsInner
 
 ## Properties
 

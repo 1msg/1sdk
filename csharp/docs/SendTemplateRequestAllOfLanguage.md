@@ -1,4 +1,4 @@
-# Org.OpenAPITools.Model.SendTemplateRequestAllOfLanguage
+# OneMessage.io.Model.SendTemplateRequestAllOfLanguage
 Object, containing fields \"policy\" and \"code\".  **policy** - now \"deterministic\" is only available option;  **code** - one of supported language codes
 
 ## Properties
