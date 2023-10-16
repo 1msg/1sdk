@@ -26,9 +26,9 @@ Python 3.7+
 If the python package is hosted on a repository, you can install directly using:
 
 ```sh
-pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+pip install one_msg_waba_sdk 
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
+(you may need to run `pip` with root permission: `sudo pip install one_msg_waba_sdk `)
 
 Then import the package:
 ```python
@@ -60,6 +60,7 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 
 import time
+import os
 import openapi_client
 from openapi_client.rest import ApiException
 from pprint import pprint

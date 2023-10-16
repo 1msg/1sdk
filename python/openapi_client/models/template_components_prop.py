@@ -21,9 +21,9 @@ import json
 
 
 
-from openapi_client.models.null<template_components_prop_inner> import null<TemplateComponentsPropInner>
+from openapi_client.models.template_components_prop_inner import TemplateComponentsPropInner
 
-class TemplateComponentsProp(null<TemplateComponentsPropInner>):
+class TemplateComponentsProp(TemplateComponentsPropInner):
     """
     Array of template components  # noqa: E501
     """
