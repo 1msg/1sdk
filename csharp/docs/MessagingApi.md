@@ -14,7 +14,7 @@ All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
 <a id="messageslist"></a>
 # **MessagesList**
-> GetMessages MessagesList (bool? last = null, int? lastMessageNumber = null, int? firstMessageNumber = null, int? limit = null, string? chatId = null, int? minTime = null, int? maxTime = null, string? msgId = null)
+> GetMessages MessagesList (bool? last = null, int? lastMessageNumber = null, int? firstMessageNumber = null, int? limit = null, string chatId = null, int? minTime = null, int? maxTime = null, string msgId = null)
 
 Get messages list
 
@@ -44,10 +44,10 @@ namespace Example
             var lastMessageNumber = 100;  // int? | The lastMessageNumber parameter from the last response. Example: 100 (optional) 
             var firstMessageNumber = 1;  // int? | The firstMessageNumber parameter from the last response. Example: 1 (optional) 
             var limit = 200;  // int? | Sets length of the message list. Default 100. With value 0 returns all messages. (optional) 
-            var chatId = 556123122026@c.us;  // string? | Filter messages by chatId  Chat ID from the message list. Example: 556123122026@c.us (optional) 
+            var chatId = 556123122026@c.us;  // string | Filter messages by chatId  Chat ID from the message list. Example: 556123122026@c.us (optional) 
             var minTime = 1665396610;  // int? | Filter messages received after specified time. Example: 1665396610 (optional) 
             var maxTime = 1665396610;  // int? | Filter messages received before specified time. Example: 1665396610 (optional) 
-            var msgId = 0XzkmGNn4prUAQlzsHApGNRXQ0U;  // string? | Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U (optional) 
+            var msgId = 0XzkmGNn4prUAQlzsHApGNRXQ0U;  // string | Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U (optional) 
 
             try
             {
@@ -94,10 +94,10 @@ catch (ApiException e)
 | **lastMessageNumber** | **int?** | The lastMessageNumber parameter from the last response. Example: 100 | [optional]  |
 | **firstMessageNumber** | **int?** | The firstMessageNumber parameter from the last response. Example: 1 | [optional]  |
 | **limit** | **int?** | Sets length of the message list. Default 100. With value 0 returns all messages. | [optional]  |
-| **chatId** | **string?** | Filter messages by chatId  Chat ID from the message list. Example: 556123122026@c.us | [optional]  |
+| **chatId** | **string** | Filter messages by chatId  Chat ID from the message list. Example: 556123122026@c.us | [optional]  |
 | **minTime** | **int?** | Filter messages received after specified time. Example: 1665396610 | [optional]  |
 | **maxTime** | **int?** | Filter messages received before specified time. Example: 1665396610 | [optional]  |
-| **msgId** | **string?** | Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U | [optional]  |
+| **msgId** | **string** | Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U | [optional]  |
 
 ### Return type
 
@@ -123,7 +123,7 @@ catch (ApiException e)
 
 <a id="readmessage"></a>
 # **ReadMessage**
-> SetMe ReadMessage (ReadMessageRequest? readMessageRequest = null)
+> SetMe ReadMessage (ReadMessageRequest readMessageRequest = null)
 
 Mark message as read
 
@@ -149,7 +149,7 @@ namespace Example
             // config.AddApiKeyPrefix("token", "Bearer");
 
             var apiInstance = new MessagingApi(config);
-            var readMessageRequest = new ReadMessageRequest?(); // ReadMessageRequest? |  (optional) 
+            var readMessageRequest = new ReadMessageRequest(); // ReadMessageRequest |  (optional) 
 
             try
             {
@@ -192,7 +192,7 @@ catch (ApiException e)
 
 | Name | Type | Description | Notes |
 |------|------|-------------|-------|
-| **readMessageRequest** | [**ReadMessageRequest?**](ReadMessageRequest?.md) |  | [optional]  |
+| **readMessageRequest** | [**ReadMessageRequest**](ReadMessageRequest.md) |  | [optional]  |
 
 ### Return type
 

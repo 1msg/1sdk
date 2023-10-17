@@ -383,7 +383,7 @@ This endpoint does not need any parameter.
 
 <a id="getstatistics"></a>
 # **GetStatistics**
-> ChannelStatistics GetStatistics (string? date = null)
+> ChannelStatistics GetStatistics (string date = null)
 
 Get Channel statistics
 
@@ -411,7 +411,7 @@ namespace Example
             // config.AddApiKeyPrefix("token", "Bearer");
 
             var apiInstance = new ChannelApi(config);
-            var date = 03.2022;  // string? | Month and year in format mm.YYYY. (optional) 
+            var date = 03.2022;  // string | Month and year in format mm.YYYY. (optional) 
 
             try
             {
@@ -454,7 +454,7 @@ catch (ApiException e)
 
 | Name | Type | Description | Notes |
 |------|------|-------------|-------|
-| **date** | **string?** | Month and year in format mm.YYYY. | [optional]  |
+| **date** | **string** | Month and year in format mm.YYYY. | [optional]  |
 
 ### Return type
 
