@@ -21,9 +21,9 @@ import json
 
 
 
-from openapi_client.models.null<get_commerce_inner> import null<GetCommerceInner>
+from openapi_client.models.get_commerce_inner import GetCommerceInner
 
-class GetCommerce(null<GetCommerceInner>):
+class GetCommerce(GetCommerceInner):
     """
     GetCommerce
     """

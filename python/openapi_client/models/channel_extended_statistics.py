@@ -21,9 +21,9 @@ import json
 
 
 
-from openapi_client.models.null<channel_extended_statistics_inner> import null<ChannelExtendedStatisticsInner>
+from openapi_client.models.channel_extended_statistics_inner import ChannelExtendedStatisticsInner
 
-class ChannelExtendedStatistics(null<ChannelExtendedStatisticsInner>):
+class ChannelExtendedStatistics(ChannelExtendedStatisticsInner):
     """
     ChannelExtendedStatistics
     """

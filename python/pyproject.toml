@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "openapi_client"
+name = "one_msg_waba_sdk"
 version = "1.0.0"
 description = "one_msg_waba_sdk"
 authors = ["OpenAPI Generator Community <hello@1msg.io>"]
