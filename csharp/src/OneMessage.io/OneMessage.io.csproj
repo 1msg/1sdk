@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo><!-- setting GenerateAssemblyInfo to false causes this bug https://github.com/dotnet/project-system/issues/3934 -->
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFrameworks>net7.0;net48</TargetFrameworks>
     <AssemblyName>OneMessage.io</AssemblyName>
     <PackageId>OneMessage.io</PackageId>
     <OutputType>Library</OutputType>
@@ -10,7 +10,7 @@
     <Company>1Message</Company>
     <AssemblyTitle>OpenAPI Library</AssemblyTitle>
     <Description>A library generated from a OpenAPI doc</Description>
-    <Copyright>No Copyright</Copyright>
+    <Copyright>Apache 2.0</Copyright>
     <RootNamespace>OneMessage.io</RootNamespace>
     <Version>1.0.0</Version>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\OneMessage.io.xml</DocumentationFile>
@@ -18,7 +18,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>Minor update</PackageReleaseNotes>
     <PackageTags>WABA SDK Whatsapp OneMessage</PackageTags>
-    <Nullable>annotations</Nullable>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,12 +26,16 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="RestSharp" Version="110.2.0" />
     <PackageReference Include="Polly" Version="7.2.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="/"/>
     <None Remove="System.Web" />
+    <None Remove="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web" />
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
 </Project>
