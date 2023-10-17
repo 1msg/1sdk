@@ -41,7 +41,7 @@ namespace OneMessage.io.Api
         /// <param name="msgId">Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>GetMessages</returns>
-        GetMessages MessagesList(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string? chatId = default(string?), int? minTime = default(int?), int? maxTime = default(int?), string? msgId = default(string?), int operationIndex = 0);
+        GetMessages MessagesList(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string chatId = default(string), int? minTime = default(int?), int? maxTime = default(int?), string msgId = default(string), int operationIndex = 0);
 
         /// <summary>
         /// Get messages list
@@ -60,7 +60,7 @@ namespace OneMessage.io.Api
         /// <param name="msgId">Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of GetMessages</returns>
-        ApiResponse<GetMessages> MessagesListWithHttpInfo(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string? chatId = default(string?), int? minTime = default(int?), int? maxTime = default(int?), string? msgId = default(string?), int operationIndex = 0);
+        ApiResponse<GetMessages> MessagesListWithHttpInfo(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string chatId = default(string), int? minTime = default(int?), int? maxTime = default(int?), string msgId = default(string), int operationIndex = 0);
         /// <summary>
         /// Mark message as read
         /// </summary>
@@ -68,7 +68,7 @@ namespace OneMessage.io.Api
         /// <param name="readMessageRequest"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>SetMe</returns>
-        SetMe ReadMessage(ReadMessageRequest? readMessageRequest = default(ReadMessageRequest?), int operationIndex = 0);
+        SetMe ReadMessage(ReadMessageRequest readMessageRequest = default(ReadMessageRequest), int operationIndex = 0);
 
         /// <summary>
         /// Mark message as read
@@ -80,7 +80,7 @@ namespace OneMessage.io.Api
         /// <param name="readMessageRequest"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of SetMe</returns>
-        ApiResponse<SetMe> ReadMessageWithHttpInfo(ReadMessageRequest? readMessageRequest = default(ReadMessageRequest?), int operationIndex = 0);
+        ApiResponse<SetMe> ReadMessageWithHttpInfo(ReadMessageRequest readMessageRequest = default(ReadMessageRequest), int operationIndex = 0);
         /// <summary>
         /// Send a Contact
         /// </summary>
@@ -223,7 +223,7 @@ namespace OneMessage.io.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of GetMessages</returns>
-        System.Threading.Tasks.Task<GetMessages> MessagesListAsync(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string? chatId = default(string?), int? minTime = default(int?), int? maxTime = default(int?), string? msgId = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<GetMessages> MessagesListAsync(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string chatId = default(string), int? minTime = default(int?), int? maxTime = default(int?), string msgId = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Get messages list
@@ -243,7 +243,7 @@ namespace OneMessage.io.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GetMessages)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetMessages>> MessagesListWithHttpInfoAsync(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string? chatId = default(string?), int? minTime = default(int?), int? maxTime = default(int?), string? msgId = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetMessages>> MessagesListWithHttpInfoAsync(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string chatId = default(string), int? minTime = default(int?), int? maxTime = default(int?), string msgId = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Mark message as read
         /// </summary>
@@ -255,7 +255,7 @@ namespace OneMessage.io.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of SetMe</returns>
-        System.Threading.Tasks.Task<SetMe> ReadMessageAsync(ReadMessageRequest? readMessageRequest = default(ReadMessageRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<SetMe> ReadMessageAsync(ReadMessageRequest readMessageRequest = default(ReadMessageRequest), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Mark message as read
@@ -268,7 +268,7 @@ namespace OneMessage.io.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (SetMe)</returns>
-        System.Threading.Tasks.Task<ApiResponse<SetMe>> ReadMessageWithHttpInfoAsync(ReadMessageRequest? readMessageRequest = default(ReadMessageRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<SetMe>> ReadMessageWithHttpInfoAsync(ReadMessageRequest readMessageRequest = default(ReadMessageRequest), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// Send a Contact
         /// </summary>
@@ -528,7 +528,7 @@ namespace OneMessage.io.Api
         /// <param name="msgId">Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>GetMessages</returns>
-        public GetMessages MessagesList(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string? chatId = default(string?), int? minTime = default(int?), int? maxTime = default(int?), string? msgId = default(string?), int operationIndex = 0)
+        public GetMessages MessagesList(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string chatId = default(string), int? minTime = default(int?), int? maxTime = default(int?), string msgId = default(string), int operationIndex = 0)
         {
             OneMessage.io.Client.ApiResponse<GetMessages> localVarResponse = MessagesListWithHttpInfo(last, lastMessageNumber, firstMessageNumber, limit, chatId, minTime, maxTime, msgId);
             return localVarResponse.Data;
@@ -548,7 +548,7 @@ namespace OneMessage.io.Api
         /// <param name="msgId">Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of GetMessages</returns>
-        public OneMessage.io.Client.ApiResponse<GetMessages> MessagesListWithHttpInfo(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string? chatId = default(string?), int? minTime = default(int?), int? maxTime = default(int?), string? msgId = default(string?), int operationIndex = 0)
+        public OneMessage.io.Client.ApiResponse<GetMessages> MessagesListWithHttpInfo(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string chatId = default(string), int? minTime = default(int?), int? maxTime = default(int?), string msgId = default(string), int operationIndex = 0)
         {
             OneMessage.io.Client.RequestOptions localVarRequestOptions = new OneMessage.io.Client.RequestOptions();
 
@@ -643,7 +643,7 @@ namespace OneMessage.io.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of GetMessages</returns>
-        public async System.Threading.Tasks.Task<GetMessages> MessagesListAsync(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string? chatId = default(string?), int? minTime = default(int?), int? maxTime = default(int?), string? msgId = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<GetMessages> MessagesListAsync(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string chatId = default(string), int? minTime = default(int?), int? maxTime = default(int?), string msgId = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             OneMessage.io.Client.ApiResponse<GetMessages> localVarResponse = await MessagesListWithHttpInfoAsync(last, lastMessageNumber, firstMessageNumber, limit, chatId, minTime, maxTime, msgId, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -664,7 +664,7 @@ namespace OneMessage.io.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GetMessages)</returns>
-        public async System.Threading.Tasks.Task<OneMessage.io.Client.ApiResponse<GetMessages>> MessagesListWithHttpInfoAsync(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string? chatId = default(string?), int? minTime = default(int?), int? maxTime = default(int?), string? msgId = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<OneMessage.io.Client.ApiResponse<GetMessages>> MessagesListWithHttpInfoAsync(bool? last = default(bool?), int? lastMessageNumber = default(int?), int? firstMessageNumber = default(int?), int? limit = default(int?), string chatId = default(string), int? minTime = default(int?), int? maxTime = default(int?), string msgId = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             OneMessage.io.Client.RequestOptions localVarRequestOptions = new OneMessage.io.Client.RequestOptions();
@@ -753,7 +753,7 @@ namespace OneMessage.io.Api
         /// <param name="readMessageRequest"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>SetMe</returns>
-        public SetMe ReadMessage(ReadMessageRequest? readMessageRequest = default(ReadMessageRequest?), int operationIndex = 0)
+        public SetMe ReadMessage(ReadMessageRequest readMessageRequest = default(ReadMessageRequest), int operationIndex = 0)
         {
             OneMessage.io.Client.ApiResponse<SetMe> localVarResponse = ReadMessageWithHttpInfo(readMessageRequest);
             return localVarResponse.Data;
@@ -766,7 +766,7 @@ namespace OneMessage.io.Api
         /// <param name="readMessageRequest"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of SetMe</returns>
-        public OneMessage.io.Client.ApiResponse<SetMe> ReadMessageWithHttpInfo(ReadMessageRequest? readMessageRequest = default(ReadMessageRequest?), int operationIndex = 0)
+        public OneMessage.io.Client.ApiResponse<SetMe> ReadMessageWithHttpInfo(ReadMessageRequest readMessageRequest = default(ReadMessageRequest), int operationIndex = 0)
         {
             OneMessage.io.Client.RequestOptions localVarRequestOptions = new OneMessage.io.Client.RequestOptions();
 
@@ -825,7 +825,7 @@ namespace OneMessage.io.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of SetMe</returns>
-        public async System.Threading.Tasks.Task<SetMe> ReadMessageAsync(ReadMessageRequest? readMessageRequest = default(ReadMessageRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<SetMe> ReadMessageAsync(ReadMessageRequest readMessageRequest = default(ReadMessageRequest), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             OneMessage.io.Client.ApiResponse<SetMe> localVarResponse = await ReadMessageWithHttpInfoAsync(readMessageRequest, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -839,7 +839,7 @@ namespace OneMessage.io.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (SetMe)</returns>
-        public async System.Threading.Tasks.Task<OneMessage.io.Client.ApiResponse<SetMe>> ReadMessageWithHttpInfoAsync(ReadMessageRequest? readMessageRequest = default(ReadMessageRequest?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<OneMessage.io.Client.ApiResponse<SetMe>> ReadMessageWithHttpInfoAsync(ReadMessageRequest readMessageRequest = default(ReadMessageRequest), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             OneMessage.io.Client.RequestOptions localVarRequestOptions = new OneMessage.io.Client.RequestOptions();

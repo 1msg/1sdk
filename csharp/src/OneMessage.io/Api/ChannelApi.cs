@@ -121,7 +121,7 @@ namespace OneMessage.io.Api
         /// <param name="date">Month and year in format mm.YYYY. (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ChannelStatistics</returns>
-        ChannelStatistics GetStatistics(string? date = default(string?), int operationIndex = 0);
+        ChannelStatistics GetStatistics(string date = default(string), int operationIndex = 0);
 
         /// <summary>
         /// Get Channel statistics
@@ -133,7 +133,7 @@ namespace OneMessage.io.Api
         /// <param name="date">Month and year in format mm.YYYY. (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ChannelStatistics</returns>
-        ApiResponse<ChannelStatistics> GetStatisticsWithHttpInfo(string? date = default(string?), int operationIndex = 0);
+        ApiResponse<ChannelStatistics> GetStatisticsWithHttpInfo(string date = default(string), int operationIndex = 0);
         /// <summary>
         ///  Get Status
         /// </summary>
@@ -331,7 +331,7 @@ namespace OneMessage.io.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ChannelStatistics</returns>
-        System.Threading.Tasks.Task<ChannelStatistics> GetStatisticsAsync(string? date = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ChannelStatistics> GetStatisticsAsync(string date = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// Get Channel statistics
@@ -344,7 +344,7 @@ namespace OneMessage.io.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ChannelStatistics)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ChannelStatistics>> GetStatisticsWithHttpInfoAsync(string? date = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ChannelStatistics>> GetStatisticsWithHttpInfoAsync(string date = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         ///  Get Status
         /// </summary>
@@ -1112,7 +1112,7 @@ namespace OneMessage.io.Api
         /// <param name="date">Month and year in format mm.YYYY. (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ChannelStatistics</returns>
-        public ChannelStatistics GetStatistics(string? date = default(string?), int operationIndex = 0)
+        public ChannelStatistics GetStatistics(string date = default(string), int operationIndex = 0)
         {
             OneMessage.io.Client.ApiResponse<ChannelStatistics> localVarResponse = GetStatisticsWithHttpInfo(date);
             return localVarResponse.Data;
@@ -1125,7 +1125,7 @@ namespace OneMessage.io.Api
         /// <param name="date">Month and year in format mm.YYYY. (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of ChannelStatistics</returns>
-        public OneMessage.io.Client.ApiResponse<ChannelStatistics> GetStatisticsWithHttpInfo(string? date = default(string?), int operationIndex = 0)
+        public OneMessage.io.Client.ApiResponse<ChannelStatistics> GetStatisticsWithHttpInfo(string date = default(string), int operationIndex = 0)
         {
             OneMessage.io.Client.RequestOptions localVarRequestOptions = new OneMessage.io.Client.RequestOptions();
 
@@ -1185,7 +1185,7 @@ namespace OneMessage.io.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ChannelStatistics</returns>
-        public async System.Threading.Tasks.Task<ChannelStatistics> GetStatisticsAsync(string? date = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ChannelStatistics> GetStatisticsAsync(string date = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             OneMessage.io.Client.ApiResponse<ChannelStatistics> localVarResponse = await GetStatisticsWithHttpInfoAsync(date, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -1199,7 +1199,7 @@ namespace OneMessage.io.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ChannelStatistics)</returns>
-        public async System.Threading.Tasks.Task<OneMessage.io.Client.ApiResponse<ChannelStatistics>> GetStatisticsWithHttpInfoAsync(string? date = default(string?), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<OneMessage.io.Client.ApiResponse<ChannelStatistics>> GetStatisticsWithHttpInfoAsync(string date = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             OneMessage.io.Client.RequestOptions localVarRequestOptions = new OneMessage.io.Client.RequestOptions();

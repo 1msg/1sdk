@@ -3,9 +3,8 @@
   <PropertyGroup>
     <AssemblyName>OneMessage.io.Test</AssemblyName>
     <RootNamespace>OneMessage.io.Test</RootNamespace>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFrameworks>net7.0;net48</TargetFrameworks>
     <IsPackable>false</IsPackable>
-    <Nullable>annotations</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
