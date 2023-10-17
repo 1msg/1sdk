@@ -12,7 +12,7 @@
     <Description>A library generated from a OpenAPI doc</Description>
     <Copyright>Apache 2.0</Copyright>
     <RootNamespace>OneMessage.io</RootNamespace>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\OneMessage.io.xml</DocumentationFile>
     <RepositoryUrl>https://github.com/1msg/1sdk.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
