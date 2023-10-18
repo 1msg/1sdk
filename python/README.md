@@ -60,6 +60,7 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 
 import time
+import os
 import one_msg_waba_sdk
 from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
