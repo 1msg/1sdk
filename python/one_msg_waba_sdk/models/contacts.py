@@ -21,13 +21,15 @@ import json
 
 from typing import List, Optional
 from pydantic import BaseModel, Field, conlist
-from openapi_client.models.contacts_contacts_inner import ContactsContactsInner
+from one_msg_waba_sdk.models.contacts_contacts_inner import ContactsContactsInner
+
 
 class Contacts(BaseModel):
     """
     Contacts
     """
-    contacts: Optional[conlist(ContactsContactsInner)] = Field(None, description="List of checked numbers")
+    contacts: Optional[conlist(ContactsContactsInner)] = Field(
+        None, description="List of checked numbers")
     __properties = ["contacts"]
 
     class Config:
@@ -76,5 +78,3 @@ class Contacts(BaseModel):
             "contacts": [ContactsContactsInner.from_dict(_item) for _item in obj.get("contacts")] if obj.get("contacts") is not None else None
         })
         return _obj
-
-

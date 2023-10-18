@@ -24,20 +24,20 @@ from pydantic import Field, StrictStr
 
 from typing import Optional
 
-from openapi_client.models.channel_extended_statistics import ChannelExtendedStatistics
-from openapi_client.models.channel_statistics import ChannelStatistics
-from openapi_client.models.channel_status import ChannelStatus
-from openapi_client.models.get_commerce import GetCommerce
-from openapi_client.models.get_ip import GetIP
-from openapi_client.models.get_me import GetMe
-from openapi_client.models.set_me import SetMe
-from openapi_client.models.set_me_request import SetMeRequest
-from openapi_client.models.set_settings200_response import SetSettings200Response
-from openapi_client.models.settings import Settings
+from one_msg_waba_sdk.models.channel_extended_statistics import ChannelExtendedStatistics
+from one_msg_waba_sdk.models.channel_statistics import ChannelStatistics
+from one_msg_waba_sdk.models.channel_status import ChannelStatus
+from one_msg_waba_sdk.models.get_commerce import GetCommerce
+from one_msg_waba_sdk.models.get_ip import GetIP
+from one_msg_waba_sdk.models.get_me import GetMe
+from one_msg_waba_sdk.models.set_me import SetMe
+from one_msg_waba_sdk.models.set_me_request import SetMeRequest
+from one_msg_waba_sdk.models.set_settings200_response import SetSettings200Response
+from one_msg_waba_sdk.models.settings import Settings
 
-from openapi_client.api_client import ApiClient
-from openapi_client.api_response import ApiResponse
-from openapi_client.exceptions import (  # noqa: F401
+from one_msg_waba_sdk.api_client import ApiClient
+from one_msg_waba_sdk.api_response import ApiResponse
+from one_msg_waba_sdk.exceptions import (  # noqa: F401
     ApiTypeError,
     ApiValueError
 )
@@ -587,7 +587,7 @@ class ChannelApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def get_statistics(self, var_date : Annotated[Optional[StrictStr], Field(description="Month and year in format mm.YYYY.")] = None, **kwargs) -> ChannelStatistics:  # noqa: E501
+    def get_statistics(self, var_date: Annotated[Optional[StrictStr], Field(description="Month and year in format mm.YYYY.")] = None, **kwargs) -> ChannelStatistics:  # noqa: E501
         """Get Channel statistics  # noqa: E501
 
         Get channel usage statistics  # noqa: E501
@@ -617,7 +617,7 @@ class ChannelApi:
         return self.get_statistics_with_http_info(var_date, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def get_statistics_with_http_info(self, var_date : Annotated[Optional[StrictStr], Field(description="Month and year in format mm.YYYY.")] = None, **kwargs) -> ApiResponse:  # noqa: E501
+    def get_statistics_with_http_info(self, var_date: Annotated[Optional[StrictStr], Field(description="Month and year in format mm.YYYY.")] = None, **kwargs) -> ApiResponse:  # noqa: E501
         """Get Channel statistics  # noqa: E501
 
         Get channel usage statistics  # noqa: E501
@@ -992,7 +992,7 @@ class ChannelApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def set_me(self, set_me_request : SetMeRequest, **kwargs) -> SetMe:  # noqa: E501
+    def set_me(self, set_me_request: SetMeRequest, **kwargs) -> SetMe:  # noqa: E501
         """Change user info  # noqa: E501
 
         Change user info  # noqa: E501
@@ -1022,7 +1022,7 @@ class ChannelApi:
         return self.set_me_with_http_info(set_me_request, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def set_me_with_http_info(self, set_me_request : SetMeRequest, **kwargs) -> ApiResponse:  # noqa: E501
+    def set_me_with_http_info(self, set_me_request: SetMeRequest, **kwargs) -> ApiResponse:  # noqa: E501
         """Change user info  # noqa: E501
 
         Change user info  # noqa: E501
@@ -1109,10 +1109,10 @@ class ChannelApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501
@@ -1140,7 +1140,7 @@ class ChannelApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def set_settings(self, settings : Settings, **kwargs) -> SetSettings200Response:  # noqa: E501
+    def set_settings(self, settings: Settings, **kwargs) -> SetSettings200Response:  # noqa: E501
         """Set settings  # noqa: E501
 
         **webhookUrl** - Http or https URL for receiving notifications.  # noqa: E501
@@ -1170,7 +1170,7 @@ class ChannelApi:
         return self.set_settings_with_http_info(settings, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def set_settings_with_http_info(self, settings : Settings, **kwargs) -> ApiResponse:  # noqa: E501
+    def set_settings_with_http_info(self, settings: Settings, **kwargs) -> ApiResponse:  # noqa: E501
         """Set settings  # noqa: E501
 
         **webhookUrl** - Http or https URL for receiving notifications.  # noqa: E501
@@ -1257,10 +1257,10 @@ class ChannelApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/json', 'application/x-www-form-urlencoded']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/json', 'application/x-www-form-urlencoded']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501

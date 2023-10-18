@@ -21,7 +21,8 @@ import json
 
 from typing import Optional
 from pydantic import BaseModel, StrictStr, validator
-from openapi_client.models.template_language_prop import TemplateLanguageProp
+from one_msg_waba_sdk.models.template_language_prop import TemplateLanguageProp
+
 
 class SendTemplateRequestAllOfLanguage(BaseModel):
     """
@@ -81,5 +82,3 @@ class SendTemplateRequestAllOfLanguage(BaseModel):
             "code": obj.get("code")
         })
         return _obj
-
-

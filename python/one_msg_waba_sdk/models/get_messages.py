@@ -21,7 +21,8 @@ import json
 
 from typing import List, Optional
 from pydantic import BaseModel, conlist
-from openapi_client.models.get_messages_messages_inner import GetMessagesMessagesInner
+from one_msg_waba_sdk.models.get_messages_messages_inner import GetMessagesMessagesInner
+
 
 class GetMessages(BaseModel):
     """
@@ -76,5 +77,3 @@ class GetMessages(BaseModel):
             "messages": [GetMessagesMessagesInner.from_dict(_item) for _item in obj.get("messages")] if obj.get("messages") is not None else None
         })
         return _obj
-
-

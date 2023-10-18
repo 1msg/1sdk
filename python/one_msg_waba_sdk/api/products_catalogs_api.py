@@ -19,14 +19,14 @@ import warnings
 
 from pydantic import validate_arguments, ValidationError
 
-from openapi_client.models.commerce import Commerce
-from openapi_client.models.send_message_status import SendMessageStatus
-from openapi_client.models.send_product_request import SendProductRequest
-from openapi_client.models.set_commerce import SetCommerce
+from one_msg_waba_sdk.models.commerce import Commerce
+from one_msg_waba_sdk.models.send_message_status import SendMessageStatus
+from one_msg_waba_sdk.models.send_product_request import SendProductRequest
+from one_msg_waba_sdk.models.set_commerce import SetCommerce
 
-from openapi_client.api_client import ApiClient
-from openapi_client.api_response import ApiResponse
-from openapi_client.exceptions import (  # noqa: F401
+from one_msg_waba_sdk.api_client import ApiClient
+from one_msg_waba_sdk.api_response import ApiResponse
+from one_msg_waba_sdk.exceptions import (  # noqa: F401
     ApiTypeError,
     ApiValueError
 )
@@ -45,7 +45,7 @@ class ProductsCatalogsApi:
         self.api_client = api_client
 
     @validate_arguments
-    def send_product(self, send_product_request : SendProductRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
+    def send_product(self, send_product_request: SendProductRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
         """Send a Product  # noqa: E501
 
         Send a single product or product list to a new or existing chat. (Only if the dialogue has an Open Session). Only one of two parameters is needed to determine the destination - chatId or phone.  First, you need to upload your inventory to Facebook. You can use the API or Facebook’s Commerce Manager to do that. If you already have a Facebook catalog set up, we suggest that you leverage that catalog for WhatsApp commerce use cases.  **You can not send products to Business WhatsApp clients.**  # noqa: E501
@@ -75,7 +75,7 @@ class ProductsCatalogsApi:
         return self.send_product_with_http_info(send_product_request, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def send_product_with_http_info(self, send_product_request : SendProductRequest, **kwargs) -> ApiResponse:  # noqa: E501
+    def send_product_with_http_info(self, send_product_request: SendProductRequest, **kwargs) -> ApiResponse:  # noqa: E501
         """Send a Product  # noqa: E501
 
         Send a single product or product list to a new or existing chat. (Only if the dialogue has an Open Session). Only one of two parameters is needed to determine the destination - chatId or phone.  First, you need to upload your inventory to Facebook. You can use the API or Facebook’s Commerce Manager to do that. If you already have a Facebook catalog set up, we suggest that you leverage that catalog for WhatsApp commerce use cases.  **You can not send products to Business WhatsApp clients.**  # noqa: E501
@@ -162,10 +162,10 @@ class ProductsCatalogsApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501
@@ -192,7 +192,7 @@ class ProductsCatalogsApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def set_commerce(self, commerce : Commerce, **kwargs) -> SetCommerce:  # noqa: E501
+    def set_commerce(self, commerce: Commerce, **kwargs) -> SetCommerce:  # noqa: E501
         """Set Commerce Settings  # noqa: E501
 
         **is_catalog_visible** - Set to true to show catalog storefront icon or false to hide it. **is_cart_enabled** - Set to true to enable cart or false to disable it.  # noqa: E501
@@ -222,7 +222,7 @@ class ProductsCatalogsApi:
         return self.set_commerce_with_http_info(commerce, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def set_commerce_with_http_info(self, commerce : Commerce, **kwargs) -> ApiResponse:  # noqa: E501
+    def set_commerce_with_http_info(self, commerce: Commerce, **kwargs) -> ApiResponse:  # noqa: E501
         """Set Commerce Settings  # noqa: E501
 
         **is_catalog_visible** - Set to true to show catalog storefront icon or false to hide it. **is_cart_enabled** - Set to true to enable cart or false to disable it.  # noqa: E501
@@ -309,10 +309,10 @@ class ProductsCatalogsApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/json', 'application/x-www-form-urlencoded']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/json', 'application/x-www-form-urlencoded']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501

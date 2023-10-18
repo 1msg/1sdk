@@ -24,19 +24,19 @@ from pydantic import Field, StrictBool, StrictInt, StrictStr
 
 from typing import Optional
 
-from openapi_client.models.get_messages import GetMessages
-from openapi_client.models.read_message_request import ReadMessageRequest
-from openapi_client.models.send_contact_request import SendContactRequest
-from openapi_client.models.send_file_request import SendFileRequest
-from openapi_client.models.send_list_request import SendListRequest
-from openapi_client.models.send_location_request import SendLocationRequest
-from openapi_client.models.send_message_request import SendMessageRequest
-from openapi_client.models.send_message_status import SendMessageStatus
-from openapi_client.models.set_me import SetMe
+from one_msg_waba_sdk.models.get_messages import GetMessages
+from one_msg_waba_sdk.models.read_message_request import ReadMessageRequest
+from one_msg_waba_sdk.models.send_contact_request import SendContactRequest
+from one_msg_waba_sdk.models.send_file_request import SendFileRequest
+from one_msg_waba_sdk.models.send_list_request import SendListRequest
+from one_msg_waba_sdk.models.send_location_request import SendLocationRequest
+from one_msg_waba_sdk.models.send_message_request import SendMessageRequest
+from one_msg_waba_sdk.models.send_message_status import SendMessageStatus
+from one_msg_waba_sdk.models.set_me import SetMe
 
-from openapi_client.api_client import ApiClient
-from openapi_client.api_response import ApiResponse
-from openapi_client.exceptions import (  # noqa: F401
+from one_msg_waba_sdk.api_client import ApiClient
+from one_msg_waba_sdk.api_response import ApiResponse
+from one_msg_waba_sdk.exceptions import (  # noqa: F401
     ApiTypeError,
     ApiValueError
 )
@@ -55,7 +55,7 @@ class MessagingApi:
         self.api_client = api_client
 
     @validate_arguments
-    def messages_list(self, last : Annotated[Optional[StrictBool], Field(description="Displays the last messages. If this parameter is passed, then lastMessageNumber is ignored.")] = None, last_message_number : Annotated[Optional[StrictInt], Field(description="The lastMessageNumber parameter from the last response. Example: 100")] = None, first_message_number : Annotated[Optional[StrictInt], Field(description="The firstMessageNumber parameter from the last response. Example: 1")] = None, limit : Annotated[Optional[StrictInt], Field(description="Sets length of the message list. Default 100. With value 0 returns all messages.")] = None, chat_id : Annotated[Optional[StrictStr], Field(description="Filter messages by chatId  Chat ID from the message list. Example: 556123122026@c.us")] = None, min_time : Annotated[Optional[StrictInt], Field(description="Filter messages received after specified time. Example: 1665396610")] = None, max_time : Annotated[Optional[StrictInt], Field(description="Filter messages received before specified time. Example: 1665396610")] = None, msg_id : Annotated[Optional[StrictStr], Field(description="Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U")] = None, **kwargs) -> GetMessages:  # noqa: E501
+    def messages_list(self, last: Annotated[Optional[StrictBool], Field(description="Displays the last messages. If this parameter is passed, then lastMessageNumber is ignored.")] = None, last_message_number: Annotated[Optional[StrictInt], Field(description="The lastMessageNumber parameter from the last response. Example: 100")] = None, first_message_number: Annotated[Optional[StrictInt], Field(description="The firstMessageNumber parameter from the last response. Example: 1")] = None, limit: Annotated[Optional[StrictInt], Field(description="Sets length of the message list. Default 100. With value 0 returns all messages.")] = None, chat_id: Annotated[Optional[StrictStr], Field(description="Filter messages by chatId  Chat ID from the message list. Example: 556123122026@c.us")] = None, min_time: Annotated[Optional[StrictInt], Field(description="Filter messages received after specified time. Example: 1665396610")] = None, max_time: Annotated[Optional[StrictInt], Field(description="Filter messages received before specified time. Example: 1665396610")] = None, msg_id: Annotated[Optional[StrictStr], Field(description="Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U")] = None, **kwargs) -> GetMessages:  # noqa: E501
         """Get messages list  # noqa: E501
 
           # noqa: E501
@@ -99,7 +99,7 @@ class MessagingApi:
         return self.messages_list_with_http_info(last, last_message_number, first_message_number, limit, chat_id, min_time, max_time, msg_id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def messages_list_with_http_info(self, last : Annotated[Optional[StrictBool], Field(description="Displays the last messages. If this parameter is passed, then lastMessageNumber is ignored.")] = None, last_message_number : Annotated[Optional[StrictInt], Field(description="The lastMessageNumber parameter from the last response. Example: 100")] = None, first_message_number : Annotated[Optional[StrictInt], Field(description="The firstMessageNumber parameter from the last response. Example: 1")] = None, limit : Annotated[Optional[StrictInt], Field(description="Sets length of the message list. Default 100. With value 0 returns all messages.")] = None, chat_id : Annotated[Optional[StrictStr], Field(description="Filter messages by chatId  Chat ID from the message list. Example: 556123122026@c.us")] = None, min_time : Annotated[Optional[StrictInt], Field(description="Filter messages received after specified time. Example: 1665396610")] = None, max_time : Annotated[Optional[StrictInt], Field(description="Filter messages received before specified time. Example: 1665396610")] = None, msg_id : Annotated[Optional[StrictStr], Field(description="Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U")] = None, **kwargs) -> ApiResponse:  # noqa: E501
+    def messages_list_with_http_info(self, last: Annotated[Optional[StrictBool], Field(description="Displays the last messages. If this parameter is passed, then lastMessageNumber is ignored.")] = None, last_message_number: Annotated[Optional[StrictInt], Field(description="The lastMessageNumber parameter from the last response. Example: 100")] = None, first_message_number: Annotated[Optional[StrictInt], Field(description="The firstMessageNumber parameter from the last response. Example: 1")] = None, limit: Annotated[Optional[StrictInt], Field(description="Sets length of the message list. Default 100. With value 0 returns all messages.")] = None, chat_id: Annotated[Optional[StrictStr], Field(description="Filter messages by chatId  Chat ID from the message list. Example: 556123122026@c.us")] = None, min_time: Annotated[Optional[StrictInt], Field(description="Filter messages received after specified time. Example: 1665396610")] = None, max_time: Annotated[Optional[StrictInt], Field(description="Filter messages received before specified time. Example: 1665396610")] = None, msg_id: Annotated[Optional[StrictStr], Field(description="Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U")] = None, **kwargs) -> ApiResponse:  # noqa: E501
         """Get messages list  # noqa: E501
 
           # noqa: E501
@@ -252,7 +252,7 @@ class MessagingApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def read_message(self, read_message_request : Optional[ReadMessageRequest] = None, **kwargs) -> SetMe:  # noqa: E501
+    def read_message(self, read_message_request: Optional[ReadMessageRequest] = None, **kwargs) -> SetMe:  # noqa: E501
         """Mark message as read  # noqa: E501
 
           # noqa: E501
@@ -282,7 +282,7 @@ class MessagingApi:
         return self.read_message_with_http_info(read_message_request, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def read_message_with_http_info(self, read_message_request : Optional[ReadMessageRequest] = None, **kwargs) -> ApiResponse:  # noqa: E501
+    def read_message_with_http_info(self, read_message_request: Optional[ReadMessageRequest] = None, **kwargs) -> ApiResponse:  # noqa: E501
         """Mark message as read  # noqa: E501
 
           # noqa: E501
@@ -369,10 +369,10 @@ class MessagingApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501
@@ -400,7 +400,7 @@ class MessagingApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def send_contact(self, send_contact_request : SendContactRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
+    def send_contact(self, send_contact_request: SendContactRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
         """Send a Contact  # noqa: E501
 
         Send a contact to an existing chat. (Only if the dialogue has an Open Session). Only one of two parameters is needed to determine the destination - chatId or phone.  # noqa: E501
@@ -430,7 +430,7 @@ class MessagingApi:
         return self.send_contact_with_http_info(send_contact_request, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def send_contact_with_http_info(self, send_contact_request : SendContactRequest, **kwargs) -> ApiResponse:  # noqa: E501
+    def send_contact_with_http_info(self, send_contact_request: SendContactRequest, **kwargs) -> ApiResponse:  # noqa: E501
         """Send a Contact  # noqa: E501
 
         Send a contact to an existing chat. (Only if the dialogue has an Open Session). Only one of two parameters is needed to determine the destination - chatId or phone.  # noqa: E501
@@ -517,10 +517,10 @@ class MessagingApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501
@@ -547,7 +547,7 @@ class MessagingApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def send_file(self, send_file_request : SendFileRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
+    def send_file(self, send_file_request: SendFileRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
         """Send a File  # noqa: E501
 
         Send a file to an existing chat. (Only if the dialogue has an Open Session). Only one of two parameters is needed to determine the destination - chatId or phone.  # noqa: E501
@@ -577,7 +577,7 @@ class MessagingApi:
         return self.send_file_with_http_info(send_file_request, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def send_file_with_http_info(self, send_file_request : SendFileRequest, **kwargs) -> ApiResponse:  # noqa: E501
+    def send_file_with_http_info(self, send_file_request: SendFileRequest, **kwargs) -> ApiResponse:  # noqa: E501
         """Send a File  # noqa: E501
 
         Send a file to an existing chat. (Only if the dialogue has an Open Session). Only one of two parameters is needed to determine the destination - chatId or phone.  # noqa: E501
@@ -664,10 +664,10 @@ class MessagingApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501
@@ -694,7 +694,7 @@ class MessagingApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def send_list(self, send_list_request : SendListRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
+    def send_list(self, send_list_request: SendListRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
         """Send List Message  # noqa: E501
 
         Send Interactive List Message to an existing chat. (Only if the dialogue has an Open Session). Only one of two parameters is needed to determine the destination - chatId or phone.  # noqa: E501
@@ -724,7 +724,7 @@ class MessagingApi:
         return self.send_list_with_http_info(send_list_request, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def send_list_with_http_info(self, send_list_request : SendListRequest, **kwargs) -> ApiResponse:  # noqa: E501
+    def send_list_with_http_info(self, send_list_request: SendListRequest, **kwargs) -> ApiResponse:  # noqa: E501
         """Send List Message  # noqa: E501
 
         Send Interactive List Message to an existing chat. (Only if the dialogue has an Open Session). Only one of two parameters is needed to determine the destination - chatId or phone.  # noqa: E501
@@ -811,10 +811,10 @@ class MessagingApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501
@@ -841,7 +841,7 @@ class MessagingApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def send_location(self, send_location_request : SendLocationRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
+    def send_location(self, send_location_request: SendLocationRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
         """Send a Location  # noqa: E501
 
         Send a location to an existing chat. (Only if the dialogue has an Open Session). Only one of two parameters is needed to determine the destination - chatId or phone.  # noqa: E501
@@ -871,7 +871,7 @@ class MessagingApi:
         return self.send_location_with_http_info(send_location_request, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def send_location_with_http_info(self, send_location_request : SendLocationRequest, **kwargs) -> ApiResponse:  # noqa: E501
+    def send_location_with_http_info(self, send_location_request: SendLocationRequest, **kwargs) -> ApiResponse:  # noqa: E501
         """Send a Location  # noqa: E501
 
         Send a location to an existing chat. (Only if the dialogue has an Open Session). Only one of two parameters is needed to determine the destination - chatId or phone.  # noqa: E501
@@ -958,10 +958,10 @@ class MessagingApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501
@@ -988,7 +988,7 @@ class MessagingApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def send_message(self, send_message_request : SendMessageRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
+    def send_message(self, send_message_request: SendMessageRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
         """Send a Message  # noqa: E501
 
         Send a message to an existing chat. (Only if the dialogue has an Open Session). The message will be added to the queue for sending and delivered even if the phone is disconnected from the Internet or authorization is not passed.  Only one of two parameters is needed to determine the destination - chatId or phone.  # noqa: E501
@@ -1018,7 +1018,7 @@ class MessagingApi:
         return self.send_message_with_http_info(send_message_request, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def send_message_with_http_info(self, send_message_request : SendMessageRequest, **kwargs) -> ApiResponse:  # noqa: E501
+    def send_message_with_http_info(self, send_message_request: SendMessageRequest, **kwargs) -> ApiResponse:  # noqa: E501
         """Send a Message  # noqa: E501
 
         Send a message to an existing chat. (Only if the dialogue has an Open Session). The message will be added to the queue for sending and delivered even if the phone is disconnected from the Internet or authorization is not passed.  Only one of two parameters is needed to determine the destination - chatId or phone.  # noqa: E501
@@ -1105,10 +1105,10 @@ class MessagingApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501

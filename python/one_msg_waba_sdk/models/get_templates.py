@@ -21,7 +21,8 @@ import json
 
 from typing import List, Optional
 from pydantic import BaseModel, StrictInt, conlist
-from openapi_client.models.get_templates_templates_inner import GetTemplatesTemplatesInner
+from one_msg_waba_sdk.models.get_templates_templates_inner import GetTemplatesTemplatesInner
+
 
 class GetTemplates(BaseModel):
     """
@@ -78,5 +79,3 @@ class GetTemplates(BaseModel):
             "templates": [GetTemplatesTemplatesInner.from_dict(_item) for _item in obj.get("templates")] if obj.get("templates") is not None else None
         })
         return _obj
-
-

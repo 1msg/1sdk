@@ -21,7 +21,8 @@ import json
 
 from typing import List, Optional
 from pydantic import BaseModel, Field, StrictStr, conlist
-from openapi_client.models.send_product_request_all_of_action_sections import SendProductRequestAllOfActionSections
+from one_msg_waba_sdk.models.send_product_request_all_of_action_sections import SendProductRequestAllOfActionSections
+
 
 class SendProductRequestAllOfAction(BaseModel):
     """
@@ -80,5 +81,3 @@ class SendProductRequestAllOfAction(BaseModel):
             "sections": [SendProductRequestAllOfActionSections.from_dict(_item) for _item in obj.get("sections")] if obj.get("sections") is not None else None
         })
         return _obj
-
-

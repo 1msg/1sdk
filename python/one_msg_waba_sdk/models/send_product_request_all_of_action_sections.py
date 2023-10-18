@@ -21,13 +21,15 @@ import json
 
 from typing import List, Optional
 from pydantic import BaseModel, Field, StrictStr, conlist
-from openapi_client.models.send_product_request_all_of_action_product_items import SendProductRequestAllOfActionProductItems
+from one_msg_waba_sdk.models.send_product_request_all_of_action_product_items import SendProductRequestAllOfActionProductItems
+
 
 class SendProductRequestAllOfActionSections(BaseModel):
     """
     SendProductRequestAllOfActionSections
     """
-    title: Optional[StrictStr] = Field(None, description="Title of the section. Example: the-section-title")
+    title: Optional[StrictStr] = Field(
+        None, description="Title of the section. Example: the-section-title")
     product_items: Optional[conlist(SendProductRequestAllOfActionProductItems)] = None
     __properties = ["title", "product_items"]
 
@@ -78,5 +80,3 @@ class SendProductRequestAllOfActionSections(BaseModel):
             "product_items": [SendProductRequestAllOfActionProductItems.from_dict(_item) for _item in obj.get("product_items")] if obj.get("product_items") is not None else None
         })
         return _obj
-
-

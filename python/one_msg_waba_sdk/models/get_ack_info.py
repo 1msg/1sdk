@@ -21,7 +21,8 @@ import json
 
 from typing import List, Optional
 from pydantic import BaseModel, conlist
-from openapi_client.models.get_ack_info_hooks_inner import GetAckInfoHooksInner
+from one_msg_waba_sdk.models.get_ack_info_hooks_inner import GetAckInfoHooksInner
+
 
 class GetAckInfo(BaseModel):
     """
@@ -76,5 +77,3 @@ class GetAckInfo(BaseModel):
             "hooks": [GetAckInfoHooksInner.from_dict(_item) for _item in obj.get("hooks")] if obj.get("hooks") is not None else None
         })
         return _obj
-
-

@@ -21,16 +21,16 @@ from pydantic import validate_arguments, ValidationError
 
 from typing import Any, Dict
 
-from openapi_client.models.add_template_request import AddTemplateRequest
-from openapi_client.models.get_templates import GetTemplates
-from openapi_client.models.remove_template_request import RemoveTemplateRequest
-from openapi_client.models.send_message_status import SendMessageStatus
-from openapi_client.models.send_template_request import SendTemplateRequest
-from openapi_client.models.set_me import SetMe
+from one_msg_waba_sdk.models.add_template_request import AddTemplateRequest
+from one_msg_waba_sdk.models.get_templates import GetTemplates
+from one_msg_waba_sdk.models.remove_template_request import RemoveTemplateRequest
+from one_msg_waba_sdk.models.send_message_status import SendMessageStatus
+from one_msg_waba_sdk.models.send_template_request import SendTemplateRequest
+from one_msg_waba_sdk.models.set_me import SetMe
 
-from openapi_client.api_client import ApiClient
-from openapi_client.api_response import ApiResponse
-from openapi_client.exceptions import (  # noqa: F401
+from one_msg_waba_sdk.api_client import ApiClient
+from one_msg_waba_sdk.api_response import ApiResponse
+from one_msg_waba_sdk.exceptions import (  # noqa: F401
     ApiTypeError,
     ApiValueError
 )
@@ -49,7 +49,7 @@ class TemplatesApi:
         self.api_client = api_client
 
     @validate_arguments
-    def add_template(self, add_template_request : AddTemplateRequest, **kwargs) -> object:  # noqa: E501
+    def add_template(self, add_template_request: AddTemplateRequest, **kwargs) -> object:  # noqa: E501
         """Create template  # noqa: E501
 
         Create new template for sending.  # noqa: E501
@@ -79,7 +79,7 @@ class TemplatesApi:
         return self.add_template_with_http_info(add_template_request, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def add_template_with_http_info(self, add_template_request : AddTemplateRequest, **kwargs) -> ApiResponse:  # noqa: E501
+    def add_template_with_http_info(self, add_template_request: AddTemplateRequest, **kwargs) -> ApiResponse:  # noqa: E501
         """Create template  # noqa: E501
 
         Create new template for sending.  # noqa: E501
@@ -166,10 +166,10 @@ class TemplatesApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501
@@ -196,7 +196,7 @@ class TemplatesApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def remove_template(self, remove_template_request : RemoveTemplateRequest, **kwargs) -> SetMe:  # noqa: E501
+    def remove_template(self, remove_template_request: RemoveTemplateRequest, **kwargs) -> SetMe:  # noqa: E501
         """Remove template  # noqa: E501
 
         Deleted template can not be restored.  # noqa: E501
@@ -226,7 +226,7 @@ class TemplatesApi:
         return self.remove_template_with_http_info(remove_template_request, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def remove_template_with_http_info(self, remove_template_request : RemoveTemplateRequest, **kwargs) -> ApiResponse:  # noqa: E501
+    def remove_template_with_http_info(self, remove_template_request: RemoveTemplateRequest, **kwargs) -> ApiResponse:  # noqa: E501
         """Remove template  # noqa: E501
 
         Deleted template can not be restored.  # noqa: E501
@@ -313,10 +313,10 @@ class TemplatesApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501
@@ -343,7 +343,7 @@ class TemplatesApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def send_template(self, send_template_request : SendTemplateRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
+    def send_template(self, send_template_request: SendTemplateRequest, **kwargs) -> SendMessageStatus:  # noqa: E501
         """Send Template Message  # noqa: E501
 
         Send Template Message to a new or existing chat. Only one of two parameters is needed to determine the destination - chatId or phone.  Example:  {\"template\":\"template_name\",\"language\":{\"policy\":\"deterministic\",\"code\":\"en\"},\"namespace\":\"namespace_id\",\"params\":[{\"type\":\"header\",\"parameters\":[{\"type\":\"image\",\"image\": {\"link\":\"https://...\"}}]},{\"type\":\"body\",\"parameters\":[{\"type\":\"text\",\"text\":\"test\"}]}],\"phone\":\"556123122026\"}  # noqa: E501
@@ -373,7 +373,7 @@ class TemplatesApi:
         return self.send_template_with_http_info(send_template_request, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def send_template_with_http_info(self, send_template_request : SendTemplateRequest, **kwargs) -> ApiResponse:  # noqa: E501
+    def send_template_with_http_info(self, send_template_request: SendTemplateRequest, **kwargs) -> ApiResponse:  # noqa: E501
         """Send Template Message  # noqa: E501
 
         Send Template Message to a new or existing chat. Only one of two parameters is needed to determine the destination - chatId or phone.  Example:  {\"template\":\"template_name\",\"language\":{\"policy\":\"deterministic\",\"code\":\"en\"},\"namespace\":\"namespace_id\",\"params\":[{\"type\":\"header\",\"parameters\":[{\"type\":\"image\",\"image\": {\"link\":\"https://...\"}}]},{\"type\":\"body\",\"parameters\":[{\"type\":\"text\",\"text\":\"test\"}]}],\"phone\":\"556123122026\"}  # noqa: E501
@@ -460,10 +460,10 @@ class TemplatesApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501

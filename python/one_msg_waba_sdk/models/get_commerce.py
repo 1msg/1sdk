@@ -19,9 +19,8 @@ import re  # noqa: F401
 import json
 
 
+from one_msg_waba_sdk.models.get_commerce_inner import GetCommerceInner
 
-
-from openapi_client.models.get_commerce_inner import GetCommerceInner
 
 class GetCommerce(GetCommerceInner):
     """
@@ -67,5 +66,3 @@ class GetCommerce(GetCommerceInner):
         _obj = GetCommerce.parse_obj({
         })
         return _obj
-
-

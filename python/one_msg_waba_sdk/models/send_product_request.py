@@ -21,18 +21,23 @@ import json
 
 from typing import Optional
 from pydantic import BaseModel, Field, StrictInt, StrictStr
-from openapi_client.models.send_product_request_all_of_action import SendProductRequestAllOfAction
+from one_msg_waba_sdk.models.send_product_request_all_of_action import SendProductRequestAllOfAction
+
 
 class SendProductRequest(BaseModel):
     """
     SendProductRequest
     """
-    chat_id: Optional[StrictStr] = Field(None, alias="chatId", description="**Required if phone is not set**  Chat ID from the message list. Examples: 12020721369@c.us . Used instead of the phone parameter.")
-    phone: Optional[StrictInt] = Field(None, description="**Required if chatId is not set**  A phone number starting with the country code. You do not need to add your number.   USA example: 12020721369.")
+    chat_id: Optional[StrictStr] = Field(
+        None, alias="chatId", description="**Required if phone is not set**  Chat ID from the message list. Examples: 12020721369@c.us . Used instead of the phone parameter.")
+    phone: Optional[StrictInt] = Field(
+        None, description="**Required if chatId is not set**  A phone number starting with the country code. You do not need to add your number.   USA example: 12020721369.")
     action: SendProductRequestAllOfAction = Field(...)
     body: Optional[StrictStr] = Field(None, description="Text of message. Example: Some text.")
-    footer: Optional[StrictStr] = Field(None, description="Located under the message text. Example: Footer.")
-    header: Optional[StrictStr] = Field(None, description="Header of catalog. Example: Header.  **Required when sending the catalog.**")
+    footer: Optional[StrictStr] = Field(
+        None, description="Located under the message text. Example: Footer.")
+    header: Optional[StrictStr] = Field(
+        None, description="Header of catalog. Example: Header.  **Required when sending the catalog.**")
     __properties = ["chatId", "phone", "action", "body", "footer", "header"]
 
     class Config:
@@ -82,5 +87,3 @@ class SendProductRequest(BaseModel):
             "header": obj.get("header")
         })
         return _obj
-
-

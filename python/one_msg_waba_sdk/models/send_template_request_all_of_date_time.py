@@ -21,8 +21,9 @@ import json
 
 from typing import Optional
 from pydantic import BaseModel
-from openapi_client.models.send_template_request_all_of_date_time_component import SendTemplateRequestAllOfDateTimeComponent
-from openapi_client.models.send_template_request_all_of_date_time_unix_epoch import SendTemplateRequestAllOfDateTimeUnixEpoch
+from one_msg_waba_sdk.models.send_template_request_all_of_date_time_component import SendTemplateRequestAllOfDateTimeComponent
+from one_msg_waba_sdk.models.send_template_request_all_of_date_time_unix_epoch import SendTemplateRequestAllOfDateTimeUnixEpoch
+
 
 class SendTemplateRequestAllOfDateTime(BaseModel):
     """
@@ -78,5 +79,3 @@ class SendTemplateRequestAllOfDateTime(BaseModel):
             "unix_epoch": SendTemplateRequestAllOfDateTimeUnixEpoch.from_dict(obj.get("unix_epoch")) if obj.get("unix_epoch") is not None else None
         })
         return _obj
-
-

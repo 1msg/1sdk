@@ -22,7 +22,7 @@ import ssl
 from urllib.parse import urlencode, quote_plus
 import urllib3
 
-from openapi_client.exceptions import ApiException, UnauthorizedException, ForbiddenException, NotFoundException, ServiceException, ApiValueError, BadRequestException
+from one_msg_waba_sdk.exceptions import ApiException, UnauthorizedException, ForbiddenException, NotFoundException, ServiceException, ApiValueError, BadRequestException
 
 
 logger = logging.getLogger(__name__)
@@ -69,7 +69,6 @@ class RESTClientObject:
 
         if configuration.tls_server_name:
             addition_pool_args['server_hostname'] = configuration.tls_server_name
-
 
         if configuration.socket_options is not None:
             addition_pool_args['socket_options'] = configuration.socket_options
@@ -142,7 +141,7 @@ class RESTClientObject:
 
         timeout = None
         if _request_timeout:
-            if isinstance(_request_timeout, (int,float)):  # noqa: E501,F821
+            if isinstance(_request_timeout, (int, float)):  # noqa: E501,F821
                 timeout = urllib3.Timeout(total=_request_timeout)
             elif (isinstance(_request_timeout, tuple) and
                   len(_request_timeout) == 2):
@@ -239,7 +238,7 @@ class RESTClientObject:
         return r
 
     def get_request(self, url, headers=None, query_params=None, _preload_content=True,
-            _request_timeout=None):
+                    _request_timeout=None):
         return self.request("GET", url,
                             headers=headers,
                             _preload_content=_preload_content,
@@ -247,7 +246,7 @@ class RESTClientObject:
                             query_params=query_params)
 
     def head_request(self, url, headers=None, query_params=None, _preload_content=True,
-             _request_timeout=None):
+                     _request_timeout=None):
         return self.request("HEAD", url,
                             headers=headers,
                             _preload_content=_preload_content,
@@ -255,7 +254,7 @@ class RESTClientObject:
                             query_params=query_params)
 
     def options_request(self, url, headers=None, query_params=None, post_params=None,
-                body=None, _preload_content=True, _request_timeout=None):
+                        body=None, _preload_content=True, _request_timeout=None):
         return self.request("OPTIONS", url,
                             headers=headers,
                             query_params=query_params,
@@ -265,7 +264,7 @@ class RESTClientObject:
                             body=body)
 
     def delete_request(self, url, headers=None, query_params=None, body=None,
-               _preload_content=True, _request_timeout=None):
+                       _preload_content=True, _request_timeout=None):
         return self.request("DELETE", url,
                             headers=headers,
                             query_params=query_params,
@@ -274,7 +273,7 @@ class RESTClientObject:
                             body=body)
 
     def post_request(self, url, headers=None, query_params=None, post_params=None,
-             body=None, _preload_content=True, _request_timeout=None):
+                     body=None, _preload_content=True, _request_timeout=None):
         return self.request("POST", url,
                             headers=headers,
                             query_params=query_params,
@@ -284,7 +283,7 @@ class RESTClientObject:
                             body=body)
 
     def put_request(self, url, headers=None, query_params=None, post_params=None,
-            body=None, _preload_content=True, _request_timeout=None):
+                    body=None, _preload_content=True, _request_timeout=None):
         return self.request("PUT", url,
                             headers=headers,
                             query_params=query_params,
@@ -294,7 +293,7 @@ class RESTClientObject:
                             body=body)
 
     def patch_request(self, url, headers=None, query_params=None, post_params=None,
-              body=None, _preload_content=True, _request_timeout=None):
+                      body=None, _preload_content=True, _request_timeout=None):
         return self.request("PATCH", url,
                             headers=headers,
                             query_params=query_params,

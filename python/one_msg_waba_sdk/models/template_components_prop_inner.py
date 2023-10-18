@@ -21,7 +21,8 @@ import json
 
 from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, Field, StrictStr, conlist, validator
-from openapi_client.models.template_components_prop_inner_buttons_inner import TemplateComponentsPropInnerButtonsInner
+from one_msg_waba_sdk.models.template_components_prop_inner_buttons_inner import TemplateComponentsPropInnerButtonsInner
+
 
 class TemplateComponentsPropInner(BaseModel):
     """
@@ -104,5 +105,3 @@ class TemplateComponentsPropInner(BaseModel):
             "buttons": [TemplateComponentsPropInnerButtonsInner.from_dict(_item) for _item in obj.get("buttons")] if obj.get("buttons") is not None else None
         })
         return _obj
-
-

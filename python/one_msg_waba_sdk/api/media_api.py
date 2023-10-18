@@ -19,12 +19,12 @@ import warnings
 
 from pydantic import validate_arguments, ValidationError
 
-from openapi_client.models.media_id import MediaId
-from openapi_client.models.upload_media import UploadMedia
+from one_msg_waba_sdk.models.media_id import MediaId
+from one_msg_waba_sdk.models.upload_media import UploadMedia
 
-from openapi_client.api_client import ApiClient
-from openapi_client.api_response import ApiResponse
-from openapi_client.exceptions import (  # noqa: F401
+from one_msg_waba_sdk.api_client import ApiClient
+from one_msg_waba_sdk.api_response import ApiResponse
+from one_msg_waba_sdk.exceptions import (  # noqa: F401
     ApiTypeError,
     ApiValueError
 )
@@ -43,7 +43,7 @@ class MediaApi:
         self.api_client = api_client
 
     @validate_arguments
-    def upload_media(self, upload_media : UploadMedia, **kwargs) -> MediaId:  # noqa: E501
+    def upload_media(self, upload_media: UploadMedia, **kwargs) -> MediaId:  # noqa: E501
         """Upload media & get mediaId  # noqa: E501
 
         Upload media and get mediaId. Uploaded media can be sent in template  # noqa: E501
@@ -73,7 +73,7 @@ class MediaApi:
         return self.upload_media_with_http_info(upload_media, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def upload_media_with_http_info(self, upload_media : UploadMedia, **kwargs) -> ApiResponse:  # noqa: E501
+    def upload_media_with_http_info(self, upload_media: UploadMedia, **kwargs) -> ApiResponse:  # noqa: E501
         """Upload media & get mediaId  # noqa: E501
 
         Upload media and get mediaId. Uploaded media can be sent in template  # noqa: E501
@@ -160,10 +160,10 @@ class MediaApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501

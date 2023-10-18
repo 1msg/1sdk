@@ -19,9 +19,8 @@ import re  # noqa: F401
 import json
 
 
+from one_msg_waba_sdk.models.template_components_prop_inner import TemplateComponentsPropInner
 
-
-from openapi_client.models.template_components_prop_inner import TemplateComponentsPropInner
 
 class TemplateComponentsProp(TemplateComponentsPropInner):
     """
@@ -67,5 +66,3 @@ class TemplateComponentsProp(TemplateComponentsPropInner):
         _obj = TemplateComponentsProp.parse_obj({
         })
         return _obj
-
-

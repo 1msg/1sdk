@@ -22,13 +22,13 @@ from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 from pydantic import Field, StrictStr
 
-from openapi_client.models.get_ack_info import GetAckInfo
-from openapi_client.models.set_webhook_status import SetWebhookStatus
-from openapi_client.models.webhook_url import WebhookUrl
+from one_msg_waba_sdk.models.get_ack_info import GetAckInfo
+from one_msg_waba_sdk.models.set_webhook_status import SetWebhookStatus
+from one_msg_waba_sdk.models.webhook_url import WebhookUrl
 
-from openapi_client.api_client import ApiClient
-from openapi_client.api_response import ApiResponse
-from openapi_client.exceptions import (  # noqa: F401
+from one_msg_waba_sdk.api_client import ApiClient
+from one_msg_waba_sdk.api_response import ApiResponse
+from one_msg_waba_sdk.exceptions import (  # noqa: F401
     ApiTypeError,
     ApiValueError
 )
@@ -47,7 +47,7 @@ class WebhooksApi:
         self.api_client = api_client
 
     @validate_arguments
-    def ack_hook_info(self, message_id : Annotated[StrictStr, Field(..., description="Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U")], **kwargs) -> GetAckInfo:  # noqa: E501
+    def ack_hook_info(self, message_id: Annotated[StrictStr, Field(..., description="Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U")], **kwargs) -> GetAckInfo:  # noqa: E501
         """Check ACKs  # noqa: E501
 
           # noqa: E501
@@ -77,7 +77,7 @@ class WebhooksApi:
         return self.ack_hook_info_with_http_info(message_id, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def ack_hook_info_with_http_info(self, message_id : Annotated[StrictStr, Field(..., description="Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U")], **kwargs) -> ApiResponse:  # noqa: E501
+    def ack_hook_info_with_http_info(self, message_id: Annotated[StrictStr, Field(..., description="Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U")], **kwargs) -> ApiResponse:  # noqa: E501
         """Check ACKs  # noqa: E501
 
           # noqa: E501
@@ -188,7 +188,7 @@ class WebhooksApi:
             _request_auth=_params.get('_request_auth'))
 
     @validate_arguments
-    def set_webhook(self, webhook_url : WebhookUrl, **kwargs) -> SetWebhookStatus:  # noqa: E501
+    def set_webhook(self, webhook_url: WebhookUrl, **kwargs) -> SetWebhookStatus:  # noqa: E501
         """Set webhook  # noqa: E501
 
         Sets the URL for receiving webhook notifications of new messages and message delivery events (ack).  **API responses in \"Callbacks\" tab**  # noqa: E501
@@ -218,7 +218,7 @@ class WebhooksApi:
         return self.set_webhook_with_http_info(webhook_url, **kwargs)  # noqa: E501
 
     @validate_arguments
-    def set_webhook_with_http_info(self, webhook_url : WebhookUrl, **kwargs) -> ApiResponse:  # noqa: E501
+    def set_webhook_with_http_info(self, webhook_url: WebhookUrl, **kwargs) -> ApiResponse:  # noqa: E501
         """Set webhook  # noqa: E501
 
         Sets the URL for receiving webhook notifications of new messages and message delivery events (ack).  **API responses in \"Callbacks\" tab**  # noqa: E501
@@ -305,10 +305,10 @@ class WebhooksApi:
 
         # set the HTTP header `Content-Type`
         _content_types_list = _params.get('_content_type',
-            self.api_client.select_header_content_type(
-                ['application/x-www-form-urlencoded', 'application/json']))
+                                          self.api_client.select_header_content_type(
+                                              ['application/x-www-form-urlencoded', 'application/json']))
         if _content_types_list:
-                _header_params['Content-Type'] = _content_types_list
+            _header_params['Content-Type'] = _content_types_list
 
         # authentication setting
         _auth_settings = ['token']  # noqa: E501

@@ -21,8 +21,9 @@ import json
 
 from typing import Optional
 from pydantic import BaseModel, StrictStr
-from openapi_client.models.send_template_request_all_of_currency import SendTemplateRequestAllOfCurrency
-from openapi_client.models.send_template_request_all_of_date_time import SendTemplateRequestAllOfDateTime
+from one_msg_waba_sdk.models.send_template_request_all_of_currency import SendTemplateRequestAllOfCurrency
+from one_msg_waba_sdk.models.send_template_request_all_of_date_time import SendTemplateRequestAllOfDateTime
+
 
 class SendTemplateRequestAllOfParams(BaseModel):
     """
@@ -80,5 +81,3 @@ class SendTemplateRequestAllOfParams(BaseModel):
             "date_time": SendTemplateRequestAllOfDateTime.from_dict(obj.get("date_time")) if obj.get("date_time") is not None else None
         })
         return _obj
-
-

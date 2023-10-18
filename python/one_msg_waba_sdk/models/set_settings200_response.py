@@ -21,7 +21,8 @@ import json
 
 from typing import Optional
 from pydantic import BaseModel, Field, StrictStr
-from openapi_client.models.set_settings200_response_all_of_update import SetSettings200ResponseAllOfUpdate
+from one_msg_waba_sdk.models.set_settings200_response_all_of_update import SetSettings200ResponseAllOfUpdate
+
 
 class SetSettings200Response(BaseModel):
     """
@@ -79,5 +80,3 @@ class SetSettings200Response(BaseModel):
             "update": SetSettings200ResponseAllOfUpdate.from_dict(obj.get("update")) if obj.get("update") is not None else None
         })
         return _obj
-
-

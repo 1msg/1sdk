@@ -21,13 +21,15 @@ import json
 
 from typing import List, Optional
 from pydantic import BaseModel, Field, StrictStr, conlist
-from openapi_client.models.send_list_request_all_of_rows import SendListRequestAllOfRows
+from one_msg_waba_sdk.models.send_list_request_all_of_rows import SendListRequestAllOfRows
+
 
 class SendListRequestAllOfSections(BaseModel):
     """
     SendListRequestAllOfSections
     """
-    title: Optional[StrictStr] = Field(None, description="Title of section, up to 24 symbols. Required if there are more then 1 section")
+    title: Optional[StrictStr] = Field(
+        None, description="Title of section, up to 24 symbols. Required if there are more then 1 section")
     rows: conlist(SendListRequestAllOfRows) = Field(...)
     __properties = ["title", "rows"]
 
@@ -78,5 +80,3 @@ class SendListRequestAllOfSections(BaseModel):
             "rows": [SendListRequestAllOfRows.from_dict(_item) for _item in obj.get("rows")] if obj.get("rows") is not None else None
         })
         return _obj
-
-

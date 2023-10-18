@@ -21,7 +21,8 @@ import json
 
 from typing import Optional
 from pydantic import BaseModel
-from openapi_client.models.commerce_params import CommerceParams
+from one_msg_waba_sdk.models.commerce_params import CommerceParams
+
 
 class Commerce(BaseModel):
     """
@@ -72,5 +73,3 @@ class Commerce(BaseModel):
             "params": CommerceParams.from_dict(obj.get("params")) if obj.get("params") is not None else None
         })
         return _obj
-
-

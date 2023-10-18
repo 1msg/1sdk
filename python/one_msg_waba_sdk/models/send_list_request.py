@@ -21,19 +21,25 @@ import json
 
 from typing import List, Optional
 from pydantic import BaseModel, Field, StrictInt, StrictStr, conlist
-from openapi_client.models.send_list_request_all_of_sections import SendListRequestAllOfSections
+from one_msg_waba_sdk.models.send_list_request_all_of_sections import SendListRequestAllOfSections
+
 
 class SendListRequest(BaseModel):
     """
     SendListRequest
     """
-    chat_id: Optional[StrictStr] = Field(None, alias="chatId", description="**Required if phone is not set**  Chat ID from the message list. Examples: 12020721369@c.us . Used instead of the phone parameter.")
-    phone: Optional[StrictInt] = Field(None, description="**Required if chatId is not set**  A phone number starting with the country code. You do not need to add your number.   USA example: 12020721369.")
+    chat_id: Optional[StrictStr] = Field(
+        None, alias="chatId", description="**Required if phone is not set**  Chat ID from the message list. Examples: 12020721369@c.us . Used instead of the phone parameter.")
+    phone: Optional[StrictInt] = Field(
+        None, description="**Required if chatId is not set**  A phone number starting with the country code. You do not need to add your number.   USA example: 12020721369.")
     body: StrictStr = Field(..., description="Main message text")
-    header: Optional[StrictStr] = Field(None, description="Header will be located above message text")
-    footer: Optional[StrictStr] = Field(None, description="Footer will be placed under message text")
+    header: Optional[StrictStr] = Field(
+        None, description="Header will be located above message text")
+    footer: Optional[StrictStr] = Field(
+        None, description="Footer will be placed under message text")
     action: StrictStr = Field(..., description="Action for open list")
-    sections: conlist(SendListRequestAllOfSections) = Field(..., description="Up to 10 sections from which the client can choose.  Each section is object with fields:  *title* - Title of section, up to 24 symbols. Required if there are more then 1 section  *rows* - available options. Required    Each option is object with fields:  *id* - Unique id for option, up to 200 symbols. Required  *title* - Title of option, up to 24 symbols. Required  *description* - Description of option, up to 72 symbols    Example:  [{\"title\":\"Section 1\",\"rows\":[{\"id\":\"1\",\"title\":\"Option 1\",\"description\":\"Description 1\"}]},{\"title\":\"Section 2\",\"rows\":[{\"id\":\"2\",\"title\":\"Option 2\",\"description\":\"Description 2\"}]}]")
+    sections: conlist(SendListRequestAllOfSections) = Field(...,
+                                                            description="Up to 10 sections from which the client can choose.  Each section is object with fields:  *title* - Title of section, up to 24 symbols. Required if there are more then 1 section  *rows* - available options. Required    Each option is object with fields:  *id* - Unique id for option, up to 200 symbols. Required  *title* - Title of option, up to 24 symbols. Required  *description* - Description of option, up to 72 symbols    Example:  [{\"title\":\"Section 1\",\"rows\":[{\"id\":\"1\",\"title\":\"Option 1\",\"description\":\"Description 1\"}]},{\"title\":\"Section 2\",\"rows\":[{\"id\":\"2\",\"title\":\"Option 2\",\"description\":\"Description 2\"}]}]")
     __properties = ["chatId", "phone", "body", "header", "footer", "action", "sections"]
 
     class Config:
@@ -88,5 +94,3 @@ class SendListRequest(BaseModel):
             "sections": [SendListRequestAllOfSections.from_dict(_item) for _item in obj.get("sections")] if obj.get("sections") is not None else None
         })
         return _obj
-
-

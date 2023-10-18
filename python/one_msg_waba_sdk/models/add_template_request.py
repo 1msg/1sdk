@@ -21,9 +21,10 @@ import json
 
 from typing import Optional
 from pydantic import BaseModel, Field, StrictStr
-from openapi_client.models.template_category_prop import TemplateCategoryProp
-from openapi_client.models.template_components_prop import TemplateComponentsProp
-from openapi_client.models.template_language_prop import TemplateLanguageProp
+from one_msg_waba_sdk.models.template_category_prop import TemplateCategoryProp
+from one_msg_waba_sdk.models.template_components_prop import TemplateComponentsProp
+from one_msg_waba_sdk.models.template_language_prop import TemplateLanguageProp
+
 
 class AddTemplateRequest(BaseModel):
     """
@@ -80,5 +81,3 @@ class AddTemplateRequest(BaseModel):
             "language": obj.get("language")
         })
         return _obj
-
-

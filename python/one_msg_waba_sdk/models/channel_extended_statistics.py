@@ -19,9 +19,8 @@ import re  # noqa: F401
 import json
 
 
+from one_msg_waba_sdk.models.channel_extended_statistics_inner import ChannelExtendedStatisticsInner
 
-
-from openapi_client.models.channel_extended_statistics_inner import ChannelExtendedStatisticsInner
 
 class ChannelExtendedStatistics(ChannelExtendedStatisticsInner):
     """
@@ -67,5 +66,3 @@ class ChannelExtendedStatistics(ChannelExtendedStatisticsInner):
         _obj = ChannelExtendedStatistics.parse_obj({
         })
         return _obj
-
-

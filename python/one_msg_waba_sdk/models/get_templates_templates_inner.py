@@ -21,9 +21,10 @@ import json
 
 from typing import Optional
 from pydantic import BaseModel, Field, StrictStr
-from openapi_client.models.template_category_prop import TemplateCategoryProp
-from openapi_client.models.template_components_prop import TemplateComponentsProp
-from openapi_client.models.template_language_prop import TemplateLanguageProp
+from one_msg_waba_sdk.models.template_category_prop import TemplateCategoryProp
+from one_msg_waba_sdk.models.template_components_prop import TemplateComponentsProp
+from one_msg_waba_sdk.models.template_language_prop import TemplateLanguageProp
+
 
 class GetTemplatesTemplatesInner(BaseModel):
     """
@@ -36,7 +37,8 @@ class GetTemplatesTemplatesInner(BaseModel):
     namespace: Optional[StrictStr] = Field(None, description="Can be found by method /templates")
     rejected_reason: Optional[StrictStr] = None
     status: Optional[StrictStr] = None
-    __properties = ["category", "components", "language", "name", "namespace", "rejected_reason", "status"]
+    __properties = ["category", "components", "language",
+                    "name", "namespace", "rejected_reason", "status"]
 
     class Config:
         """Pydantic configuration"""
@@ -86,5 +88,3 @@ class GetTemplatesTemplatesInner(BaseModel):
             "status": obj.get("status")
         })
         return _obj
-
-
