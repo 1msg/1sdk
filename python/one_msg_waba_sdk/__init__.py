@@ -15,7 +15,7 @@
 """  # noqa: E501
 
 
-__version__ = "1.2.0"
+__version__ = "1.3.0"
 
 # import apis into sdk package
 from one_msg_waba_sdk.api.channel_api import ChannelApi
