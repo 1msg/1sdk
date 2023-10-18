@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.commerce import Commerce  # noqa: E501
+from one_msg_waba_sdk.models.commerce import Commerce  # noqa: E501
+
 
 class TestCommerce(unittest.TestCase):
     """Commerce unit test stubs"""
@@ -37,7 +38,7 @@ class TestCommerce(unittest.TestCase):
         model = Commerce()  # noqa: E501
         if include_optional:
             return Commerce(
-                params = openapi_client.models.commerce_params.Commerce_params(
+                params = one_msg_waba_sdk.models.commerce_params.Commerce_params(
                     is_cart_enabled = True, 
                     is_catalog_visible = True, )
             )
@@ -50,6 +51,7 @@ class TestCommerce(unittest.TestCase):
         """Test Commerce"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

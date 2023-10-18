@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.set_settings200_response import SetSettings200Response  # noqa: E501
+from one_msg_waba_sdk.models.set_settings200_response import SetSettings200Response  # noqa: E501
+
 
 class TestSetSettings200Response(unittest.TestCase):
     """SetSettings200Response unit test stubs"""
@@ -50,6 +51,7 @@ class TestSetSettings200Response(unittest.TestCase):
         """Test SetSettings200Response"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

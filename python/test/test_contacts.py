@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.contacts import Contacts  # noqa: E501
+from one_msg_waba_sdk.models.contacts import Contacts  # noqa: E501
+
 
 class TestContacts(unittest.TestCase):
     """Contacts unit test stubs"""
@@ -38,7 +39,7 @@ class TestContacts(unittest.TestCase):
         if include_optional:
             return Contacts(
                 contacts = [
-                    openapi_client.models.contacts_contacts_inner.Contacts_contacts_inner(
+                    one_msg_waba_sdk.models.contacts_contacts_inner.Contacts_contacts_inner(
                         input = '16315551000', 
                         status = 'valid', 
                         wa_id = '16315551000', )
@@ -53,6 +54,7 @@ class TestContacts(unittest.TestCase):
         """Test Contacts"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

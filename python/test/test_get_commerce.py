@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.get_commerce import GetCommerce  # noqa: E501
+from one_msg_waba_sdk.models.get_commerce import GetCommerce  # noqa: E501
+
 
 class TestGetCommerce(unittest.TestCase):
     """GetCommerce unit test stubs"""
@@ -47,6 +48,7 @@ class TestGetCommerce(unittest.TestCase):
         """Test GetCommerce"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

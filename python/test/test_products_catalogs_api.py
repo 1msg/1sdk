@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.products_catalogs_api import ProductsCatalogsApi  # noqa: E501
+from one_msg_waba_sdk.api.products_catalogs_api import ProductsCatalogsApi  # noqa: E501
 
 
 class TestProductsCatalogsApi(unittest.TestCase):

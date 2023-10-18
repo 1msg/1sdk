@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.get_messages import GetMessages  # noqa: E501
+from one_msg_waba_sdk.models.get_messages import GetMessages  # noqa: E501
+
 
 class TestGetMessages(unittest.TestCase):
     """GetMessages unit test stubs"""
@@ -38,7 +39,7 @@ class TestGetMessages(unittest.TestCase):
         if include_optional:
             return GetMessages(
                 messages = [
-                    openapi_client.models.get_messages_messages_inner.GetMessages_messages_inner(
+                    one_msg_waba_sdk.models.get_messages_messages_inner.GetMessages_messages_inner(
                         message_number = 1, 
                         id = '0XzkmGNn4prUAQlzsHApGNRXQ0U', 
                         body = 'Test message', 
@@ -65,6 +66,7 @@ class TestGetMessages(unittest.TestCase):
         """Test GetMessages"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

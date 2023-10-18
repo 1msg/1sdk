@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.media_api import MediaApi  # noqa: E501
+from one_msg_waba_sdk.api.media_api import MediaApi  # noqa: E501
 
 
 class TestMediaApi(unittest.TestCase):

@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.channel_api import ChannelApi  # noqa: E501
+from one_msg_waba_sdk.api.channel_api import ChannelApi  # noqa: E501
 
 
 class TestChannelApi(unittest.TestCase):

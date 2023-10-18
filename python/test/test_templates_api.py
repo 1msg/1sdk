@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.templates_api import TemplatesApi  # noqa: E501
+from one_msg_waba_sdk.api.templates_api import TemplatesApi  # noqa: E501
 
 
 class TestTemplatesApi(unittest.TestCase):

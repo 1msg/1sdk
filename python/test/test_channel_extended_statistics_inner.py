@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.channel_extended_statistics_inner import ChannelExtendedStatisticsInner  # noqa: E501
+from one_msg_waba_sdk.models.channel_extended_statistics_inner import ChannelExtendedStatisticsInner  # noqa: E501
+
 
 class TestChannelExtendedStatisticsInner(unittest.TestCase):
     """ChannelExtendedStatisticsInner unit test stubs"""
@@ -60,6 +61,7 @@ class TestChannelExtendedStatisticsInner(unittest.TestCase):
         """Test ChannelExtendedStatisticsInner"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

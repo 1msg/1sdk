@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.send_template_request_all_of_params import SendTemplateRequestAllOfParams  # noqa: E501
+from one_msg_waba_sdk.models.send_template_request_all_of_params import SendTemplateRequestAllOfParams  # noqa: E501
+
 
 class TestSendTemplateRequestAllOfParams(unittest.TestCase):
     """SendTemplateRequestAllOfParams unit test stubs"""
@@ -38,11 +39,11 @@ class TestSendTemplateRequestAllOfParams(unittest.TestCase):
         if include_optional:
             return SendTemplateRequestAllOfParams(
                 default = 'Some title',
-                currency = openapi_client.models.send_template_request_all_of_currency.SendTemplateRequest_allOf_currency(
+                currency = one_msg_waba_sdk.models.send_template_request_all_of_currency.SendTemplateRequest_allOf_currency(
                     currency_code = 'USD', 
                     amount_1000 = 100990, ),
-                date_time = openapi_client.models.send_template_request_all_of_date_time.SendTemplateRequest_allOf_date_time(
-                    component = openapi_client.models.send_template_request_all_of_date_time_component.SendTemplateRequest_allOf_date_time_component(
+                date_time = one_msg_waba_sdk.models.send_template_request_all_of_date_time.SendTemplateRequest_allOf_date_time(
+                    component = one_msg_waba_sdk.models.send_template_request_all_of_date_time_component.SendTemplateRequest_allOf_date_time_component(
                         day_of_week = 'FRIDAY', 
                         year = 2001, 
                         month = 4, 
@@ -50,7 +51,7 @@ class TestSendTemplateRequestAllOfParams(unittest.TestCase):
                         hour = 17, 
                         minute = 20, 
                         calendar = 'GREGORIAN', ), 
-                    unix_epoch = openapi_client.models.send_template_request_all_of_date_time_unix_epoch.SendTemplateRequest_allOf_date_time_unix_epoch(
+                    unix_epoch = one_msg_waba_sdk.models.send_template_request_all_of_date_time_unix_epoch.SendTemplateRequest_allOf_date_time_unix_epoch(
                         timestamp = 987168000, ), )
             )
         else:
@@ -62,6 +63,7 @@ class TestSendTemplateRequestAllOfParams(unittest.TestCase):
         """Test SendTemplateRequestAllOfParams"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

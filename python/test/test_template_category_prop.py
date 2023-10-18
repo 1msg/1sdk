@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.template_category_prop import TemplateCategoryProp  # noqa: E501
+from one_msg_waba_sdk.models.template_category_prop import TemplateCategoryProp  # noqa: E501
+
 
 class TestTemplateCategoryProp(unittest.TestCase):
     """TemplateCategoryProp unit test stubs"""
@@ -30,6 +31,7 @@ class TestTemplateCategoryProp(unittest.TestCase):
     def testTemplateCategoryProp(self):
         """Test TemplateCategoryProp"""
         # inst = TemplateCategoryProp()
+
 
 if __name__ == '__main__':
     unittest.main()

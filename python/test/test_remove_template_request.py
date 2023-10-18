@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.remove_template_request import RemoveTemplateRequest  # noqa: E501
+from one_msg_waba_sdk.models.remove_template_request import RemoveTemplateRequest  # noqa: E501
+
 
 class TestRemoveTemplateRequest(unittest.TestCase):
     """RemoveTemplateRequest unit test stubs"""
@@ -48,6 +49,7 @@ class TestRemoveTemplateRequest(unittest.TestCase):
         """Test RemoveTemplateRequest"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

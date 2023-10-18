@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.send_product_request_all_of_action import SendProductRequestAllOfAction  # noqa: E501
+from one_msg_waba_sdk.models.send_product_request_all_of_action import SendProductRequestAllOfAction  # noqa: E501
+
 
 class TestSendProductRequestAllOfAction(unittest.TestCase):
     """SendProductRequestAllOfAction unit test stubs"""
@@ -40,10 +41,10 @@ class TestSendProductRequestAllOfAction(unittest.TestCase):
                 catalog_id = '407921857496983',
                 product_retailer_id = 'product-1',
                 sections = [
-                    openapi_client.models.send_product_request_all_of_action_sections.SendProductRequest_allOf_action_sections(
+                    one_msg_waba_sdk.models.send_product_request_all_of_action_sections.SendProductRequest_allOf_action_sections(
                         title = 'the-section-title', 
                         product_items = [
-                            openapi_client.models.send_product_request_all_of_action_product_items.SendProductRequest_allOf_action_product_items(
+                            one_msg_waba_sdk.models.send_product_request_all_of_action_product_items.SendProductRequest_allOf_action_product_items(
                                 product_retailer_id = 'product-1', )
                             ], )
                     ]
@@ -57,6 +58,7 @@ class TestSendProductRequestAllOfAction(unittest.TestCase):
         """Test SendProductRequestAllOfAction"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

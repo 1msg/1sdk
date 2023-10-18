@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.contacts_contacts_inner import ContactsContactsInner  # noqa: E501
+from one_msg_waba_sdk.models.contacts_contacts_inner import ContactsContactsInner  # noqa: E501
+
 
 class TestContactsContactsInner(unittest.TestCase):
     """ContactsContactsInner unit test stubs"""
@@ -50,6 +51,7 @@ class TestContactsContactsInner(unittest.TestCase):
         """Test ContactsContactsInner"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

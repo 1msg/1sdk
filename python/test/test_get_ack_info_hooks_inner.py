@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.get_ack_info_hooks_inner import GetAckInfoHooksInner  # noqa: E501
+from one_msg_waba_sdk.models.get_ack_info_hooks_inner import GetAckInfoHooksInner  # noqa: E501
+
 
 class TestGetAckInfoHooksInner(unittest.TestCase):
     """GetAckInfoHooksInner unit test stubs"""
@@ -54,6 +55,7 @@ class TestGetAckInfoHooksInner(unittest.TestCase):
         """Test GetAckInfoHooksInner"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

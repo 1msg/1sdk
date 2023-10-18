@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.send_template_request import SendTemplateRequest  # noqa: E501
+from one_msg_waba_sdk.models.send_template_request import SendTemplateRequest  # noqa: E501
+
 
 class TestSendTemplateRequest(unittest.TestCase):
     """SendTemplateRequest unit test stubs"""
@@ -41,17 +42,17 @@ class TestSendTemplateRequest(unittest.TestCase):
                 chat_id = '12020721369@c.us',
                 phone = 12020721369,
                 template = 'start',
-                language = openapi_client.models.send_template_request_all_of_language.SendTemplateRequest_allOf_language(
+                language = one_msg_waba_sdk.models.send_template_request_all_of_language.SendTemplateRequest_allOf_language(
                     policy = 'deterministic', 
                     code = 'en', ),
                 params = [
-                    openapi_client.models.send_template_request_all_of_params.SendTemplateRequest_allOf_params(
+                    one_msg_waba_sdk.models.send_template_request_all_of_params.SendTemplateRequest_allOf_params(
                         default = 'Some title', 
-                        currency = openapi_client.models.send_template_request_all_of_currency.SendTemplateRequest_allOf_currency(
+                        currency = one_msg_waba_sdk.models.send_template_request_all_of_currency.SendTemplateRequest_allOf_currency(
                             currency_code = 'USD', 
                             amount_1000 = 100990, ), 
-                        date_time = openapi_client.models.send_template_request_all_of_date_time.SendTemplateRequest_allOf_date_time(
-                            component = openapi_client.models.send_template_request_all_of_date_time_component.SendTemplateRequest_allOf_date_time_component(
+                        date_time = one_msg_waba_sdk.models.send_template_request_all_of_date_time.SendTemplateRequest_allOf_date_time(
+                            component = one_msg_waba_sdk.models.send_template_request_all_of_date_time_component.SendTemplateRequest_allOf_date_time_component(
                                 day_of_week = 'FRIDAY', 
                                 year = 2001, 
                                 month = 4, 
@@ -59,7 +60,7 @@ class TestSendTemplateRequest(unittest.TestCase):
                                 hour = 17, 
                                 minute = 20, 
                                 calendar = 'GREGORIAN', ), 
-                            unix_epoch = openapi_client.models.send_template_request_all_of_date_time_unix_epoch.SendTemplateRequest_allOf_date_time_unix_epoch(
+                            unix_epoch = one_msg_waba_sdk.models.send_template_request_all_of_date_time_unix_epoch.SendTemplateRequest_allOf_date_time_unix_epoch(
                                 timestamp = 987168000, ), ), )
                     ]
             )
@@ -67,7 +68,7 @@ class TestSendTemplateRequest(unittest.TestCase):
             return SendTemplateRequest(
                 namespace = 'ca300906_cfbc_410b_99fb_dcee1t39d578',
                 template = 'start',
-                language = openapi_client.models.send_template_request_all_of_language.SendTemplateRequest_allOf_language(
+                language = one_msg_waba_sdk.models.send_template_request_all_of_language.SendTemplateRequest_allOf_language(
                     policy = 'deterministic', 
                     code = 'en', ),
         )
@@ -77,6 +78,7 @@ class TestSendTemplateRequest(unittest.TestCase):
         """Test SendTemplateRequest"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

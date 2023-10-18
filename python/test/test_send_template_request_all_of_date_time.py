@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.send_template_request_all_of_date_time import SendTemplateRequestAllOfDateTime  # noqa: E501
+from one_msg_waba_sdk.models.send_template_request_all_of_date_time import SendTemplateRequestAllOfDateTime  # noqa: E501
+
 
 class TestSendTemplateRequestAllOfDateTime(unittest.TestCase):
     """SendTemplateRequestAllOfDateTime unit test stubs"""
@@ -37,7 +38,7 @@ class TestSendTemplateRequestAllOfDateTime(unittest.TestCase):
         model = SendTemplateRequestAllOfDateTime()  # noqa: E501
         if include_optional:
             return SendTemplateRequestAllOfDateTime(
-                component = openapi_client.models.send_template_request_all_of_date_time_component.SendTemplateRequest_allOf_date_time_component(
+                component = one_msg_waba_sdk.models.send_template_request_all_of_date_time_component.SendTemplateRequest_allOf_date_time_component(
                     day_of_week = 'FRIDAY', 
                     year = 2001, 
                     month = 4, 
@@ -45,7 +46,7 @@ class TestSendTemplateRequestAllOfDateTime(unittest.TestCase):
                     hour = 17, 
                     minute = 20, 
                     calendar = 'GREGORIAN', ),
-                unix_epoch = openapi_client.models.send_template_request_all_of_date_time_unix_epoch.SendTemplateRequest_allOf_date_time_unix_epoch(
+                unix_epoch = one_msg_waba_sdk.models.send_template_request_all_of_date_time_unix_epoch.SendTemplateRequest_allOf_date_time_unix_epoch(
                     timestamp = 987168000, )
             )
         else:
@@ -57,6 +58,7 @@ class TestSendTemplateRequestAllOfDateTime(unittest.TestCase):
         """Test SendTemplateRequestAllOfDateTime"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

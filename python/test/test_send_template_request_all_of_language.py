@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.send_template_request_all_of_language import SendTemplateRequestAllOfLanguage  # noqa: E501
+from one_msg_waba_sdk.models.send_template_request_all_of_language import SendTemplateRequestAllOfLanguage  # noqa: E501
+
 
 class TestSendTemplateRequestAllOfLanguage(unittest.TestCase):
     """SendTemplateRequestAllOfLanguage unit test stubs"""
@@ -49,6 +50,7 @@ class TestSendTemplateRequestAllOfLanguage(unittest.TestCase):
         """Test SendTemplateRequestAllOfLanguage"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

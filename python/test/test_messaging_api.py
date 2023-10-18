@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.messaging_api import MessagingApi  # noqa: E501
+from one_msg_waba_sdk.api.messaging_api import MessagingApi  # noqa: E501
 
 
 class TestMessagingApi(unittest.TestCase):

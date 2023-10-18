@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.template_components_prop_inner_buttons_inner import TemplateComponentsPropInnerButtonsInner  # noqa: E501
+from one_msg_waba_sdk.models.template_components_prop_inner_buttons_inner import TemplateComponentsPropInnerButtonsInner  # noqa: E501
+
 
 class TestTemplateComponentsPropInnerButtonsInner(unittest.TestCase):
     """TemplateComponentsPropInnerButtonsInner unit test stubs"""
@@ -54,6 +55,7 @@ class TestTemplateComponentsPropInnerButtonsInner(unittest.TestCase):
         """Test TemplateComponentsPropInnerButtonsInner"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

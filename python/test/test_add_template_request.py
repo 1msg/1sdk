@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.add_template_request import AddTemplateRequest  # noqa: E501
+from one_msg_waba_sdk.models.add_template_request import AddTemplateRequest  # noqa: E501
+
 
 class TestAddTemplateRequest(unittest.TestCase):
     """AddTemplateRequest unit test stubs"""
@@ -40,13 +41,13 @@ class TestAddTemplateRequest(unittest.TestCase):
                 name = 'start',
                 category = 'MARKETING',
                 components = [
-                    openapi_client.models.template_components_prop_inner.TemplateComponentsProp_inner(
+                    one_msg_waba_sdk.models.template_components_prop_inner.TemplateComponentsProp_inner(
                         type = 'BODY', 
                         format = 'TEXT', 
                         text = 'header text {{1}}', 
-                        example = openapi_client.models.example.example(), 
+                        example = one_msg_waba_sdk.models.example.example(), 
                         buttons = [
-                            openapi_client.models.template_components_prop_inner_buttons_inner.TemplateComponentsProp_inner_buttons_inner(
+                            one_msg_waba_sdk.models.template_components_prop_inner_buttons_inner.TemplateComponentsProp_inner_buttons_inner(
                                 type = 'QUICK_REPLY', 
                                 text = 'phone-button-text', 
                                 url = 'https://www.website.com/{{1}}', 
@@ -67,6 +68,7 @@ class TestAddTemplateRequest(unittest.TestCase):
         """Test AddTemplateRequest"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

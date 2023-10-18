@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.template_language_prop import TemplateLanguageProp  # noqa: E501
+from one_msg_waba_sdk.models.template_language_prop import TemplateLanguageProp  # noqa: E501
+
 
 class TestTemplateLanguageProp(unittest.TestCase):
     """TemplateLanguageProp unit test stubs"""
@@ -30,6 +31,7 @@ class TestTemplateLanguageProp(unittest.TestCase):
     def testTemplateLanguageProp(self):
         """Test TemplateLanguageProp"""
         # inst = TemplateLanguageProp()
+
 
 if __name__ == '__main__':
     unittest.main()

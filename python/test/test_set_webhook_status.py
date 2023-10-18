@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.set_webhook_status import SetWebhookStatus  # noqa: E501
+from one_msg_waba_sdk.models.set_webhook_status import SetWebhookStatus  # noqa: E501
+
 
 class TestSetWebhookStatus(unittest.TestCase):
     """SetWebhookStatus unit test stubs"""
@@ -49,6 +50,7 @@ class TestSetWebhookStatus(unittest.TestCase):
         """Test SetWebhookStatus"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

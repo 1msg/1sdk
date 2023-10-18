@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.send_list_request import SendListRequest  # noqa: E501
+from one_msg_waba_sdk.models.send_list_request import SendListRequest  # noqa: E501
+
 
 class TestSendListRequest(unittest.TestCase):
     """SendListRequest unit test stubs"""
@@ -57,6 +58,7 @@ class TestSendListRequest(unittest.TestCase):
         """Test SendListRequest"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

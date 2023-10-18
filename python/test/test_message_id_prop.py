@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.message_id_prop import MessageIdProp  # noqa: E501
+from one_msg_waba_sdk.models.message_id_prop import MessageIdProp  # noqa: E501
+
 
 class TestMessageIdProp(unittest.TestCase):
     """MessageIdProp unit test stubs"""
@@ -48,6 +49,7 @@ class TestMessageIdProp(unittest.TestCase):
         """Test MessageIdProp"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

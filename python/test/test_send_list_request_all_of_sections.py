@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.send_list_request_all_of_sections import SendListRequestAllOfSections  # noqa: E501
+from one_msg_waba_sdk.models.send_list_request_all_of_sections import SendListRequestAllOfSections  # noqa: E501
+
 
 class TestSendListRequestAllOfSections(unittest.TestCase):
     """SendListRequestAllOfSections unit test stubs"""
@@ -39,7 +40,7 @@ class TestSendListRequestAllOfSections(unittest.TestCase):
             return SendListRequestAllOfSections(
                 title = 'Some title',
                 rows = [
-                    openapi_client.models.send_list_request_all_of_rows.SendListRequest_allOf_rows(
+                    one_msg_waba_sdk.models.send_list_request_all_of_rows.SendListRequest_allOf_rows(
                         id = '1', 
                         title = 'Some option', 
                         description = 'Some description', )
@@ -48,7 +49,7 @@ class TestSendListRequestAllOfSections(unittest.TestCase):
         else:
             return SendListRequestAllOfSections(
                 rows = [
-                    openapi_client.models.send_list_request_all_of_rows.SendListRequest_allOf_rows(
+                    one_msg_waba_sdk.models.send_list_request_all_of_rows.SendListRequest_allOf_rows(
                         id = '1', 
                         title = 'Some option', 
                         description = 'Some description', )
@@ -60,6 +61,7 @@ class TestSendListRequestAllOfSections(unittest.TestCase):
         """Test SendListRequestAllOfSections"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

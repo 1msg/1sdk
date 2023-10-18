@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.template_namespace_field import TemplateNamespaceField  # noqa: E501
+from one_msg_waba_sdk.models.template_namespace_field import TemplateNamespaceField  # noqa: E501
+
 
 class TestTemplateNamespaceField(unittest.TestCase):
     """TemplateNamespaceField unit test stubs"""
@@ -48,6 +49,7 @@ class TestTemplateNamespaceField(unittest.TestCase):
         """Test TemplateNamespaceField"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.get_me401_response import GetMe401Response  # noqa: E501
+from one_msg_waba_sdk.models.get_me401_response import GetMe401Response  # noqa: E501
+
 
 class TestGetMe401Response(unittest.TestCase):
     """GetMe401Response unit test stubs"""
@@ -48,6 +49,7 @@ class TestGetMe401Response(unittest.TestCase):
         """Test GetMe401Response"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

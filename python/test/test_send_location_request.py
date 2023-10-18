@@ -16,7 +16,8 @@
 import unittest
 import datetime
 
-from openapi_client.models.send_location_request import SendLocationRequest  # noqa: E501
+from one_msg_waba_sdk.models.send_location_request import SendLocationRequest  # noqa: E501
+
 
 class TestSendLocationRequest(unittest.TestCase):
     """SendLocationRequest unit test stubs"""
@@ -55,6 +56,7 @@ class TestSendLocationRequest(unittest.TestCase):
         """Test SendLocationRequest"""
         # inst_req_only = self.make_instance(include_optional=False)
         # inst_req_and_optional = self.make_instance(include_optional=True)
+
 
 if __name__ == '__main__':
     unittest.main()

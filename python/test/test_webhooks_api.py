@@ -15,7 +15,7 @@
 
 import unittest
 
-from openapi_client.api.webhooks_api import WebhooksApi  # noqa: E501
+from one_msg_waba_sdk.api.webhooks_api import WebhooksApi  # noqa: E501
 
 
 class TestWebhooksApi(unittest.TestCase):
