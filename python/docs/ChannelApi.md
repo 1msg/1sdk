@@ -1,4 +1,4 @@
-# openapi_client.ChannelApi
+# one_msg_waba_sdk.ChannelApi
 
 All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
@@ -28,14 +28,14 @@ Get Commerce Settings
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.get_commerce import GetCommerce
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.get_commerce import GetCommerce
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -51,9 +51,9 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ChannelApi(api_client)
+    api_instance = one_msg_waba_sdk.ChannelApi(api_client)
 
     try:
         # Get Commerce Settings
@@ -103,14 +103,14 @@ Get channel usage extended statistics
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.channel_extended_statistics import ChannelExtendedStatistics
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.channel_extended_statistics import ChannelExtendedStatistics
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -126,9 +126,9 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ChannelApi(api_client)
+    api_instance = one_msg_waba_sdk.ChannelApi(api_client)
 
     try:
         # Get Extended Channel statistics
@@ -177,14 +177,14 @@ Use this edge to retrieve your profile's About info
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.get_me import GetMe
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.get_me import GetMe
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -200,9 +200,9 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ChannelApi(api_client)
+    api_instance = one_msg_waba_sdk.ChannelApi(api_client)
 
     try:
         # Get Profile Info
@@ -252,14 +252,14 @@ Get Settings
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.settings import Settings
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.settings import Settings
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -275,9 +275,9 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ChannelApi(api_client)
+    api_instance = one_msg_waba_sdk.ChannelApi(api_client)
 
     try:
         # Get Settings
@@ -327,14 +327,14 @@ Get channel usage statistics
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.channel_statistics import ChannelStatistics
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.channel_statistics import ChannelStatistics
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -350,9 +350,9 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ChannelApi(api_client)
+    api_instance = one_msg_waba_sdk.ChannelApi(api_client)
     var_date = '03.2022' # str | Month and year in format mm.YYYY. (optional)
 
     try:
@@ -405,14 +405,14 @@ Returns the status of your WhatsApp Business API client. Channel statuses:  **co
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.channel_status import ChannelStatus
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.channel_status import ChannelStatus
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -428,9 +428,9 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ChannelApi(api_client)
+    api_instance = one_msg_waba_sdk.ChannelApi(api_client)
 
     try:
         #  Get Status
@@ -479,14 +479,14 @@ Get channel server IP
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.get_ip import GetIP
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.get_ip import GetIP
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -502,9 +502,9 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ChannelApi(api_client)
+    api_instance = one_msg_waba_sdk.ChannelApi(api_client)
 
     try:
         # Get channel server IP
@@ -554,15 +554,15 @@ Change user info
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.set_me import SetMe
-from openapi_client.models.set_me_request import SetMeRequest
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.set_me import SetMe
+from one_msg_waba_sdk.models.set_me_request import SetMeRequest
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -578,10 +578,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ChannelApi(api_client)
-    set_me_request = openapi_client.SetMeRequest() # SetMeRequest | 
+    api_instance = one_msg_waba_sdk.ChannelApi(api_client)
+    set_me_request = one_msg_waba_sdk.SetMeRequest() # SetMeRequest | 
 
     try:
         # Change user info
@@ -634,15 +634,15 @@ Set settings
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.set_settings200_response import SetSettings200Response
-from openapi_client.models.settings import Settings
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.set_settings200_response import SetSettings200Response
+from one_msg_waba_sdk.models.settings import Settings
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -658,10 +658,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ChannelApi(api_client)
-    settings = openapi_client.Settings() # Settings | 
+    api_instance = one_msg_waba_sdk.ChannelApi(api_client)
+    settings = one_msg_waba_sdk.Settings() # Settings | 
 
     try:
         # Set settings

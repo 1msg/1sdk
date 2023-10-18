@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.set_settings200_response import SetSettings200Response
+from one_msg_waba_sdk.models.set_settings200_response import SetSettings200Response
 
 # TODO update the JSON string below
 json = "{}"

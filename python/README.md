@@ -1,4 +1,4 @@
-# openapi-client
+# one-msg-waba-sdk
 [1MSG.IO](https://1msg.io/) is the perfect WhatsApp management tool for your business. With us you get full access to the official Whatsapp API/webhooks.
 
 Every API request must contain an Authorize HTTP header with a token. 
@@ -32,7 +32,7 @@ pip install one_msg_waba_sdk
 
 Then import the package:
 ```python
-import openapi_client
+import one_msg_waba_sdk
 ```
 
 ### Setuptools
@@ -46,7 +46,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import openapi_client
+import one_msg_waba_sdk
 ```
 
 ### Tests
@@ -60,14 +60,13 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 
 import time
-import os
-import openapi_client
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -84,9 +83,9 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ChannelApi(api_client)
+    api_instance = one_msg_waba_sdk.ChannelApi(api_client)
 
     try:
         # Get Commerce Settings

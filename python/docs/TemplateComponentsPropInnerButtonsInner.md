@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.template_components_prop_inner_buttons_inner import TemplateComponentsPropInnerButtonsInner
+from one_msg_waba_sdk.models.template_components_prop_inner_buttons_inner import TemplateComponentsPropInnerButtonsInner
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.send_location_request import SendLocationRequest
+from one_msg_waba_sdk.models.send_location_request import SendLocationRequest
 
 # TODO update the JSON string below
 json = "{}"

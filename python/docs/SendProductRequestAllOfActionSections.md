@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.send_product_request_all_of_action_sections import SendProductRequestAllOfActionSections
+from one_msg_waba_sdk.models.send_product_request_all_of_action_sections import SendProductRequestAllOfActionSections
 
 # TODO update the JSON string below
 json = "{}"

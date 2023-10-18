@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.set_webhook_status import SetWebhookStatus
+from one_msg_waba_sdk.models.set_webhook_status import SetWebhookStatus
 
 # TODO update the JSON string below
 json = "{}"

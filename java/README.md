@@ -1,8 +1,8 @@
-# openapi-java-client
+# onemessage-java-client
 
 one_msg_waba_sdk
 - API version: 2.39.0
-  - Build date: 2023-10-12T15:05:13.148337711+07:00[Asia/Bangkok]
+  - Build date: 2023-10-17T20:55:21.249421086+07:00[Asia/Bangkok]
 
 [1MSG.IO](https://1msg.io/) is the perfect WhatsApp management tool for your business. With us you get full access to the official Whatsapp API/webhooks.
 
@@ -47,8 +47,8 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>org.openapitools</groupId>
-  <artifactId>openapi-java-client</artifactId>
+  <groupId>io.onemessage</groupId>
+  <artifactId>onemessage-java-client</artifactId>
   <version>2.39.0</version>
   <scope>compile</scope>
 </dependency>
@@ -60,12 +60,12 @@ Add this dependency to your project's build file:
 
 ```groovy
   repositories {
-    mavenCentral()     // Needed if the 'openapi-java-client' jar has been published to maven central.
-    mavenLocal()       // Needed if the 'openapi-java-client' jar has been published to the local maven repo.
+    mavenCentral()     // Needed if the 'onemessage-java-client' jar has been published to maven central.
+    mavenLocal()       // Needed if the 'onemessage-java-client' jar has been published to the local maven repo.
   }
 
   dependencies {
-     implementation "org.openapitools:openapi-java-client:2.39.0"
+     implementation "io.onemessage:onemessage-java-client:2.39.0"
   }
 ```
 
@@ -79,7 +79,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/openapi-java-client-2.39.0.jar`
+* `target/onemessage-java-client-2.39.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -89,12 +89,12 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```java
 
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ChannelApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.ChannelApi;
 
 public class Example {
   public static void main(String[] args) {

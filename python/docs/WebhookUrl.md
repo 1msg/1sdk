@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.webhook_url import WebhookUrl
+from one_msg_waba_sdk.models.webhook_url import WebhookUrl
 
 # TODO update the JSON string below
 json = "{}"

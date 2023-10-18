@@ -24,12 +24,12 @@ Get messages list
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.MessagingApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.MessagingApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -108,12 +108,12 @@ Mark message as read
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.MessagingApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.MessagingApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -178,12 +178,12 @@ Send a contact to an existing chat. (Only if the dialogue has an Open Session). 
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.MessagingApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.MessagingApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -247,12 +247,12 @@ Send a file to an existing chat. (Only if the dialogue has an Open Session). Onl
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.MessagingApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.MessagingApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -316,12 +316,12 @@ Send Interactive List Message to an existing chat. (Only if the dialogue has an 
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.MessagingApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.MessagingApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -385,12 +385,12 @@ Send a location to an existing chat. (Only if the dialogue has an Open Session).
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.MessagingApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.MessagingApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -454,12 +454,12 @@ Send a message to an existing chat. (Only if the dialogue has an Open Session). 
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.MessagingApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.MessagingApi;
 
 public class Example {
   public static void main(String[] args) {

@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.get_templates_templates_inner import GetTemplatesTemplatesInner
+from one_msg_waba_sdk.models.get_templates_templates_inner import GetTemplatesTemplatesInner
 
 # TODO update the JSON string below
 json = "{}"

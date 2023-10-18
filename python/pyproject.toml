@@ -7,7 +7,7 @@ license = "NoLicense"
 readme = "README.md"
 repository = "https://github.com/GIT_USER_ID/GIT_REPO_ID"
 keywords = ["OpenAPI", "OpenAPI-Generator", "one_msg_waba_sdk"]
-include = ["openapi_client/py.typed"]
+include = ["one_msg_waba_sdk/py.typed"]
 
 [tool.poetry.dependencies]
 python = "^3.7"

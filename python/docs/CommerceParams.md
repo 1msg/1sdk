@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.commerce_params import CommerceParams
+from one_msg_waba_sdk.models.commerce_params import CommerceParams
 
 # TODO update the JSON string below
 json = "{}"

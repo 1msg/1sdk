@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.send_file_request import SendFileRequest
+from one_msg_waba_sdk.models.send_file_request import SendFileRequest
 
 # TODO update the JSON string below
 json = "{}"

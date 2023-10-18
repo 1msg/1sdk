@@ -26,12 +26,12 @@ Get Commerce Settings
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ChannelApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.ChannelApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -92,12 +92,12 @@ Get channel usage extended statistics
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ChannelApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.ChannelApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -157,12 +157,12 @@ Use this edge to retrieve your profile&#39;s About info
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ChannelApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.ChannelApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -223,12 +223,12 @@ Get Settings
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ChannelApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.ChannelApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -289,12 +289,12 @@ Get channel usage statistics
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ChannelApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.ChannelApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -358,12 +358,12 @@ Returns the status of your WhatsApp Business API client. Channel statuses:  **co
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ChannelApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.ChannelApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -423,12 +423,12 @@ Get channel server IP
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ChannelApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.ChannelApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -489,12 +489,12 @@ Change user info
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ChannelApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.ChannelApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -559,12 +559,12 @@ Set settings
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ChannelApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.ChannelApi;
 
 public class Example {
   public static void main(String[] args) {

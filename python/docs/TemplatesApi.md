@@ -1,4 +1,4 @@
-# openapi_client.TemplatesApi
+# one_msg_waba_sdk.TemplatesApi
 
 All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
@@ -23,14 +23,14 @@ Create new template for sending.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.add_template_request import AddTemplateRequest
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.add_template_request import AddTemplateRequest
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -46,10 +46,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TemplatesApi(api_client)
-    add_template_request = openapi_client.AddTemplateRequest() # AddTemplateRequest | 
+    api_instance = one_msg_waba_sdk.TemplatesApi(api_client)
+    add_template_request = one_msg_waba_sdk.AddTemplateRequest() # AddTemplateRequest | 
 
     try:
         # Create template
@@ -101,15 +101,15 @@ Deleted template can not be restored.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.remove_template_request import RemoveTemplateRequest
-from openapi_client.models.set_me import SetMe
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.remove_template_request import RemoveTemplateRequest
+from one_msg_waba_sdk.models.set_me import SetMe
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -125,10 +125,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TemplatesApi(api_client)
-    remove_template_request = openapi_client.RemoveTemplateRequest() # RemoveTemplateRequest | 
+    api_instance = one_msg_waba_sdk.TemplatesApi(api_client)
+    remove_template_request = one_msg_waba_sdk.RemoveTemplateRequest() # RemoveTemplateRequest | 
 
     try:
         # Remove template
@@ -180,15 +180,15 @@ Send Template Message to a new or existing chat. Only one of two parameters is n
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.send_message_status import SendMessageStatus
-from openapi_client.models.send_template_request import SendTemplateRequest
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.send_message_status import SendMessageStatus
+from one_msg_waba_sdk.models.send_template_request import SendTemplateRequest
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -204,10 +204,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TemplatesApi(api_client)
-    send_template_request = openapi_client.SendTemplateRequest() # SendTemplateRequest | 
+    api_instance = one_msg_waba_sdk.TemplatesApi(api_client)
+    send_template_request = one_msg_waba_sdk.SendTemplateRequest() # SendTemplateRequest | 
 
     try:
         # Send Template Message
@@ -259,14 +259,14 @@ Get templates list
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.get_templates import GetTemplates
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.get_templates import GetTemplates
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -282,9 +282,9 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.TemplatesApi(api_client)
+    api_instance = one_msg_waba_sdk.TemplatesApi(api_client)
 
     try:
         # Get templates list

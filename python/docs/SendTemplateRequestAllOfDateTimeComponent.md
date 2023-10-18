@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.send_template_request_all_of_date_time_component import SendTemplateRequestAllOfDateTimeComponent
+from one_msg_waba_sdk.models.send_template_request_all_of_date_time_component import SendTemplateRequestAllOfDateTimeComponent
 
 # TODO update the JSON string below
 json = "{}"

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.remove_template_request import RemoveTemplateRequest
+from one_msg_waba_sdk.models.remove_template_request import RemoveTemplateRequest
 
 # TODO update the JSON string below
 json = "{}"

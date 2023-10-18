@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.channel_status import ChannelStatus
+from one_msg_waba_sdk.models.channel_status import ChannelStatus
 
 # TODO update the JSON string below
 json = "{}"

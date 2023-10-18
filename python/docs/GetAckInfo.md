@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.get_ack_info import GetAckInfo
+from one_msg_waba_sdk.models.get_ack_info import GetAckInfo
 
 # TODO update the JSON string below
 json = "{}"

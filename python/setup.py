@@ -21,7 +21,7 @@ from setuptools import setup, find_packages  # noqa: H301
 #
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
-NAME = "one_msg_waba_sdk"
+NAME = "one-msg-waba-sdk"
 VERSION = "1.0.0"
 PYTHON_REQUIRES = ">=3.7"
 REQUIRES = [
@@ -46,5 +46,5 @@ setup(
     long_description="""\
     [1MSG.IO](https://1msg.io/) is the perfect WhatsApp management tool for your business. With us you get full access to the official Whatsapp API/webhooks.  Every API request must contain an Authorize HTTP header with a token.  This is your channel token, which can be found in your channel project on your profile page. Please do not give the token to anyone or post it publicly.  The authorization token must be added to each request in the GET parameter &#39;token&#39; and always passed to query string (?token&#x3D;{your_token}). Parameters in GET queries pass query string. Parameters in POST requests — through the JSON-encoded request body.   All &#39;send&#39; methods (except /sendTemplate) will only work when the dialog session with the user is open. Some of our solutions simplify and avoid such limitations, but we urge you to pay more attention to this detail
     """,  # noqa: E501
-    package_data={"openapi_client": ["py.typed"]},
+    package_data={"one_msg_waba_sdk": ["py.typed"]},
 )

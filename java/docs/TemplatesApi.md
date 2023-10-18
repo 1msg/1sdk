@@ -21,12 +21,12 @@ Create new template for sending.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.TemplatesApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.TemplatesApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -90,12 +90,12 @@ Deleted template can not be restored.
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.TemplatesApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.TemplatesApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -159,12 +159,12 @@ Send Template Message to a new or existing chat. Only one of two parameters is n
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.TemplatesApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.TemplatesApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -228,12 +228,12 @@ Get templates list
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.TemplatesApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.TemplatesApi;
 
 public class Example {
   public static void main(String[] args) {

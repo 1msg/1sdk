@@ -1,7 +1,7 @@
 lazy val root = (project in file(".")).
   settings(
-    organization := "org.openapitools",
-    name := "openapi-java-client",
+    organization := "io.onemessage",
+    name := "onemessage-java-client",
     version := "2.39.0",
     scalaVersion := "2.11.4",
     scalacOptions ++= Seq("-feature"),

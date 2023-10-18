@@ -19,12 +19,12 @@ Send a single product or product list to a new or existing chat. (Only if the di
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ProductsCatalogsApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.ProductsCatalogsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -88,12 +88,12 @@ Set Commerce Settings
 ### Example
 ```java
 // Import classes:
-import org.openapitools.client.ApiClient;
-import org.openapitools.client.ApiException;
-import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
-import org.openapitools.client.models.*;
-import org.openapitools.client.api.ProductsCatalogsApi;
+import io.onemessage.ApiClient;
+import io.onemessage.ApiException;
+import io.onemessage.Configuration;
+import io.onemessage.auth.*;
+import io.onemessage.models.*;
+import io.onemessage.client.ProductsCatalogsApi;
 
 public class Example {
   public static void main(String[] args) {

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.commerce import Commerce
+from one_msg_waba_sdk.models.commerce import Commerce
 
 # TODO update the JSON string below
 json = "{}"

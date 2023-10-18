@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.channel_extended_statistics_inner import ChannelExtendedStatisticsInner
+from one_msg_waba_sdk.models.channel_extended_statistics_inner import ChannelExtendedStatisticsInner
 
 # TODO update the JSON string below
 json = "{}"

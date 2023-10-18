@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.read_message_request import ReadMessageRequest
+from one_msg_waba_sdk.models.read_message_request import ReadMessageRequest
 
 # TODO update the JSON string below
 json = "{}"

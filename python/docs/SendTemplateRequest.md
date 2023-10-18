@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.send_template_request import SendTemplateRequest
+from one_msg_waba_sdk.models.send_template_request import SendTemplateRequest
 
 # TODO update the JSON string below
 json = "{}"

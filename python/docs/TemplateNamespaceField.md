@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.template_namespace_field import TemplateNamespaceField
+from one_msg_waba_sdk.models.template_namespace_field import TemplateNamespaceField
 
 # TODO update the JSON string below
 json = "{}"

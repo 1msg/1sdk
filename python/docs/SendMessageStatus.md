@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.send_message_status import SendMessageStatus
+from one_msg_waba_sdk.models.send_message_status import SendMessageStatus
 
 # TODO update the JSON string below
 json = "{}"

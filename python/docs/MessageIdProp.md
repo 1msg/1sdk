@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.message_id_prop import MessageIdProp
+from one_msg_waba_sdk.models.message_id_prop import MessageIdProp
 
 # TODO update the JSON string below
 json = "{}"

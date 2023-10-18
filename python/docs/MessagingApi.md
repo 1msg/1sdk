@@ -1,4 +1,4 @@
-# openapi_client.MessagingApi
+# one_msg_waba_sdk.MessagingApi
 
 All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
@@ -26,14 +26,14 @@ Get messages list
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.get_messages import GetMessages
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.get_messages import GetMessages
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -49,9 +49,9 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MessagingApi(api_client)
+    api_instance = one_msg_waba_sdk.MessagingApi(api_client)
     last = true # bool | Displays the last messages. If this parameter is passed, then lastMessageNumber is ignored. (optional)
     last_message_number = 100 # int | The lastMessageNumber parameter from the last response. Example: 100 (optional)
     first_message_number = 1 # int | The firstMessageNumber parameter from the last response. Example: 1 (optional)
@@ -119,15 +119,15 @@ Mark message as read
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.read_message_request import ReadMessageRequest
-from openapi_client.models.set_me import SetMe
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.read_message_request import ReadMessageRequest
+from one_msg_waba_sdk.models.set_me import SetMe
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -143,10 +143,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MessagingApi(api_client)
-    read_message_request = openapi_client.ReadMessageRequest() # ReadMessageRequest |  (optional)
+    api_instance = one_msg_waba_sdk.MessagingApi(api_client)
+    read_message_request = one_msg_waba_sdk.ReadMessageRequest() # ReadMessageRequest |  (optional)
 
     try:
         # Mark message as read
@@ -199,15 +199,15 @@ Send a contact to an existing chat. (Only if the dialogue has an Open Session). 
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.send_contact_request import SendContactRequest
-from openapi_client.models.send_message_status import SendMessageStatus
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.send_contact_request import SendContactRequest
+from one_msg_waba_sdk.models.send_message_status import SendMessageStatus
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -223,10 +223,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MessagingApi(api_client)
-    send_contact_request = openapi_client.SendContactRequest() # SendContactRequest | 
+    api_instance = one_msg_waba_sdk.MessagingApi(api_client)
+    send_contact_request = one_msg_waba_sdk.SendContactRequest() # SendContactRequest | 
 
     try:
         # Send a Contact
@@ -278,15 +278,15 @@ Send a file to an existing chat. (Only if the dialogue has an Open Session). Onl
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.send_file_request import SendFileRequest
-from openapi_client.models.send_message_status import SendMessageStatus
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.send_file_request import SendFileRequest
+from one_msg_waba_sdk.models.send_message_status import SendMessageStatus
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -302,10 +302,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MessagingApi(api_client)
-    send_file_request = openapi_client.SendFileRequest() # SendFileRequest | 
+    api_instance = one_msg_waba_sdk.MessagingApi(api_client)
+    send_file_request = one_msg_waba_sdk.SendFileRequest() # SendFileRequest | 
 
     try:
         # Send a File
@@ -357,15 +357,15 @@ Send Interactive List Message to an existing chat. (Only if the dialogue has an 
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.send_list_request import SendListRequest
-from openapi_client.models.send_message_status import SendMessageStatus
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.send_list_request import SendListRequest
+from one_msg_waba_sdk.models.send_message_status import SendMessageStatus
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -381,10 +381,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MessagingApi(api_client)
-    send_list_request = openapi_client.SendListRequest() # SendListRequest | 
+    api_instance = one_msg_waba_sdk.MessagingApi(api_client)
+    send_list_request = one_msg_waba_sdk.SendListRequest() # SendListRequest | 
 
     try:
         # Send List Message
@@ -436,15 +436,15 @@ Send a location to an existing chat. (Only if the dialogue has an Open Session).
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.send_location_request import SendLocationRequest
-from openapi_client.models.send_message_status import SendMessageStatus
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.send_location_request import SendLocationRequest
+from one_msg_waba_sdk.models.send_message_status import SendMessageStatus
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -460,10 +460,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MessagingApi(api_client)
-    send_location_request = openapi_client.SendLocationRequest() # SendLocationRequest | 
+    api_instance = one_msg_waba_sdk.MessagingApi(api_client)
+    send_location_request = one_msg_waba_sdk.SendLocationRequest() # SendLocationRequest | 
 
     try:
         # Send a Location
@@ -515,15 +515,15 @@ Send a message to an existing chat. (Only if the dialogue has an Open Session). 
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.send_message_request import SendMessageRequest
-from openapi_client.models.send_message_status import SendMessageStatus
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.send_message_request import SendMessageRequest
+from one_msg_waba_sdk.models.send_message_status import SendMessageStatus
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -539,10 +539,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MessagingApi(api_client)
-    send_message_request = openapi_client.SendMessageRequest() # SendMessageRequest | 
+    api_instance = one_msg_waba_sdk.MessagingApi(api_client)
+    send_message_request = one_msg_waba_sdk.SendMessageRequest() # SendMessageRequest | 
 
     try:
         # Send a Message

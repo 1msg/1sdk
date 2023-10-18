@@ -1,4 +1,4 @@
-# openapi_client.ProductsCatalogsApi
+# one_msg_waba_sdk.ProductsCatalogsApi
 
 All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
@@ -21,15 +21,15 @@ Send a single product or product list to a new or existing chat. (Only if the di
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.send_message_status import SendMessageStatus
-from openapi_client.models.send_product_request import SendProductRequest
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.send_message_status import SendMessageStatus
+from one_msg_waba_sdk.models.send_product_request import SendProductRequest
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -45,10 +45,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProductsCatalogsApi(api_client)
-    send_product_request = openapi_client.SendProductRequest() # SendProductRequest | 
+    api_instance = one_msg_waba_sdk.ProductsCatalogsApi(api_client)
+    send_product_request = one_msg_waba_sdk.SendProductRequest() # SendProductRequest | 
 
     try:
         # Send a Product
@@ -100,15 +100,15 @@ Set Commerce Settings
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.commerce import Commerce
-from openapi_client.models.set_commerce import SetCommerce
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.commerce import Commerce
+from one_msg_waba_sdk.models.set_commerce import SetCommerce
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -124,10 +124,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ProductsCatalogsApi(api_client)
-    commerce = openapi_client.Commerce() # Commerce | 
+    api_instance = one_msg_waba_sdk.ProductsCatalogsApi(api_client)
+    commerce = one_msg_waba_sdk.Commerce() # Commerce | 
 
     try:
         # Set Commerce Settings

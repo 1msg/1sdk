@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.send_template_request_all_of_date_time_unix_epoch import SendTemplateRequestAllOfDateTimeUnixEpoch
+from one_msg_waba_sdk.models.send_template_request_all_of_date_time_unix_epoch import SendTemplateRequestAllOfDateTimeUnixEpoch
 
 # TODO update the JSON string below
 json = "{}"

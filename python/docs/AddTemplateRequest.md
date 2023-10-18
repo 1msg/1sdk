@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.add_template_request import AddTemplateRequest
+from one_msg_waba_sdk.models.add_template_request import AddTemplateRequest
 
 # TODO update the JSON string below
 json = "{}"

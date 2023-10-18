@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.contacts_contacts_inner import ContactsContactsInner
+from one_msg_waba_sdk.models.contacts_contacts_inner import ContactsContactsInner
 
 # TODO update the JSON string below
 json = "{}"

@@ -1,4 +1,4 @@
-# openapi_client.MediaApi
+# one_msg_waba_sdk.MediaApi
 
 All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
@@ -20,15 +20,15 @@ Upload media and get mediaId. Uploaded media can be sent in template
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.media_id import MediaId
-from openapi_client.models.upload_media import UploadMedia
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.media_id import MediaId
+from one_msg_waba_sdk.models.upload_media import UploadMedia
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -44,10 +44,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MediaApi(api_client)
-    upload_media = openapi_client.UploadMedia() # UploadMedia | 
+    api_instance = one_msg_waba_sdk.MediaApi(api_client)
+    upload_media = one_msg_waba_sdk.UploadMedia() # UploadMedia | 
 
     try:
         # Upload media & get mediaId

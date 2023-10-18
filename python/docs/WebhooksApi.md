@@ -1,4 +1,4 @@
-# openapi_client.WebhooksApi
+# one_msg_waba_sdk.WebhooksApi
 
 All URIs are relative to *https://api.1msg.io/YOUR_INSTANCE_NUMBER*
 
@@ -21,14 +21,14 @@ Check ACKs
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.get_ack_info import GetAckInfo
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.get_ack_info import GetAckInfo
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -44,9 +44,9 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WebhooksApi(api_client)
+    api_instance = one_msg_waba_sdk.WebhooksApi(api_client)
     message_id = '0XzkmGNn4prUAQlzsHApGNRXQ0U' # str | Message ID. Example: 0XzkmGNn4prUAQlzsHApGNRXQ0U
 
     try:
@@ -100,15 +100,15 @@ Sets the URL for receiving webhook notifications of new messages and message del
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.set_webhook_status import SetWebhookStatus
-from openapi_client.models.webhook_url import WebhookUrl
-from openapi_client.rest import ApiException
+import one_msg_waba_sdk
+from one_msg_waba_sdk.models.set_webhook_status import SetWebhookStatus
+from one_msg_waba_sdk.models.webhook_url import WebhookUrl
+from one_msg_waba_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.1msg.io/YOUR_INSTANCE_NUMBER
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = one_msg_waba_sdk.Configuration(
     host = "https://api.1msg.io/YOUR_INSTANCE_NUMBER"
 )
 
@@ -124,10 +124,10 @@ configuration.api_key['token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with one_msg_waba_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.WebhooksApi(api_client)
-    webhook_url = openapi_client.WebhookUrl() # WebhookUrl | 
+    api_instance = one_msg_waba_sdk.WebhooksApi(api_client)
+    webhook_url = one_msg_waba_sdk.WebhookUrl() # WebhookUrl | 
 
     try:
         # Set webhook

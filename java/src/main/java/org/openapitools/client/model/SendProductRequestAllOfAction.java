@@ -47,12 +47,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.openapitools.client.JSON;
+import io.onemessage.JSON;
 
 /**
  * Object containing info about product or catalog. Can contain the following fields:  **catalog_id** - id of catalog  **product_retailer_id** - id of product. Only for sending single product.  **sections** - used for sending multiply products. It&#x60;s array containing objects with catalog info. See example below.  Example: {\&quot;catalog_id\&quot;:\&quot;{{catalog_id}}\&quot;,\&quot;sections\&quot;:[{\&quot;title\&quot;:\&quot;the-section-title\&quot;,\&quot;product_items\&quot;:[{\&quot;product_retailer_id\&quot;:\&quot;{{SKU-1}}\&quot;},{\&quot;product_retailer_id\&quot;:\&quot;{{SKU-2}}\&quot;}]},{\&quot;title\&quot;:\&quot;the-section-title2\&quot;,\&quot;product_items\&quot;:[{\&quot;product_retailer_id\&quot;:\&quot;{{SKU-1}}\&quot;}]}]}
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-10-12T15:05:13.148337711+07:00[Asia/Bangkok]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-10-17T20:55:21.249421086+07:00[Asia/Bangkok]")
 public class SendProductRequestAllOfAction {
   public static final String SERIALIZED_NAME_CATALOG_ID = "catalog_id";
   @SerializedName(SERIALIZED_NAME_CATALOG_ID)

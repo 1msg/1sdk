@@ -45,12 +45,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.openapitools.client.JSON;
+import io.onemessage.JSON;
 
 /**
  * Object, containing fields \&quot;policy\&quot; and \&quot;code\&quot;.  **policy** - now \&quot;deterministic\&quot; is only available option;  **code** - one of supported language codes
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-10-12T15:05:13.148337711+07:00[Asia/Bangkok]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-10-17T20:55:21.249421086+07:00[Asia/Bangkok]")
 public class SendTemplateRequestAllOfLanguage {
   /**
    * Gets or Sets policy
