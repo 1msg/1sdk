@@ -29,7 +29,10 @@ export interface ConfigurationParameters {
 }
 
 export class Configuration {
-    constructor(private configuration: ConfigurationParameters = {}) {}
+    private configuration: ConfigurationParameters;
+    constructor(configuration: ConfigurationParameters = {}) {
+        this.configuration = configuration
+    }
 
     set config(configuration: Configuration) {
         this.configuration = configuration;
