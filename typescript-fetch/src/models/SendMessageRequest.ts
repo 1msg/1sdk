@@ -35,10 +35,10 @@ export interface SendMessageRequest {
      * need to add your number. 
      * 
      * USA example: 12020721369.
-     * @type {number}
+     * @type {string}
      * @memberof SendMessageRequest
      */
-    phone?: number;
+    phone?: string;
     /**
      * Message text, UTF-8 or UTF-16 string with emoji 🍏. Can be used with mentionedPhones, example: this text for @556123122026
      * @type {string}

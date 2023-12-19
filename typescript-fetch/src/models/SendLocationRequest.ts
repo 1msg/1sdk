@@ -35,10 +35,10 @@ export interface SendLocationRequest {
      * need to add your number. 
      * 
      * USA example: 12020721369.
-     * @type {number}
+     * @type {string}
      * @memberof SendLocationRequest
      */
-    phone?: number;
+    phone?: string;
     /**
      * Latitude of the location. Example: 45.018337
      * @type {string}
@@ -62,7 +62,7 @@ export interface SendLocationRequest {
      * @type {string}
      * @memberof SendLocationRequest
      */
-    name?: string;
+    name: string;
 }
 
 /**
@@ -72,6 +72,7 @@ export function instanceOfSendLocationRequest(value: object): boolean {
     let isInstance = true;
     isInstance = isInstance && "lat" in value;
     isInstance = isInstance && "lng" in value;
+    isInstance = isInstance && "name" in value;
 
     return isInstance;
 }
@@ -91,7 +92,7 @@ export function SendLocationRequestFromJSONTyped(json: any, ignoreDiscriminator:
         'lat': json['lat'],
         'lng': json['lng'],
         'address': !exists(json, 'address') ? undefined : json['address'],
-        'name': !exists(json, 'name') ? undefined : json['name'],
+        'name': json['name'],
     };
 }
 

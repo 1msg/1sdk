@@ -35,10 +35,10 @@ export interface SendContactRequest {
      * need to add your number. 
      * 
      * USA example: 12020721369.
-     * @type {number}
+     * @type {string}
      * @memberof SendContactRequest
      */
-    phone?: number;
+    phone?: string;
     /**
      * Array containing contact objects.
      * 

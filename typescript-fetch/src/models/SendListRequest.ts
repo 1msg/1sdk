@@ -42,10 +42,10 @@ export interface SendListRequest {
      * need to add your number. 
      * 
      * USA example: 12020721369.
-     * @type {number}
+     * @type {string}
      * @memberof SendListRequest
      */
-    phone?: number;
+    phone?: string;
     /**
      * Main message text
      * @type {string}

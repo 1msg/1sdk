@@ -42,10 +42,10 @@ export interface SendProductRequest {
      * need to add your number. 
      * 
      * USA example: 12020721369.
-     * @type {number}
+     * @type {string}
      * @memberof SendProductRequest
      */
-    phone?: number;
+    phone?: string;
     /**
      * 
      * @type {SendProductRequestAllOfAction}

@@ -15,6 +15,7 @@ src/models/AddTemplateRequest.ts
 src/models/ChannelExtendedStatisticsInner.ts
 src/models/ChannelStatistics.ts
 src/models/ChannelStatus.ts
+src/models/ChatIdProp.ts
 src/models/Commerce.ts
 src/models/CommerceParams.ts
 src/models/Contacts.ts
@@ -33,6 +34,8 @@ src/models/GetTemplatesTemplatesInner.ts
 src/models/MeComponents.ts
 src/models/MediaId.ts
 src/models/Message.ts
+src/models/MessageIdProp.ts
+src/models/PhoneProp.ts
 src/models/ReadMessageRequest.ts
 src/models/RemoveTemplateRequest.ts
 src/models/SendContactRequest.ts
@@ -65,6 +68,7 @@ src/models/TemplateCategoryProp.ts
 src/models/TemplateComponentsPropInner.ts
 src/models/TemplateComponentsPropInnerButtonsInner.ts
 src/models/TemplateLanguageProp.ts
+src/models/TemplateNamespaceField.ts
 src/models/UploadMedia.ts
 src/models/WebhookUrl.ts
 src/models/index.ts

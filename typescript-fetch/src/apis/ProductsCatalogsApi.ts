@@ -60,7 +60,7 @@ export class ProductsCatalogsApi extends runtime.BaseAPI {
 
         const headerParameters: runtime.HTTPHeaders = {};
 
-        headerParameters['Content-Type'] = 'application/x-www-form-urlencoded';
+        headerParameters['Content-Type'] = 'application/json';
 
         if (this.configuration && this.configuration.apiKey) {
             queryParameters["token"] = this.configuration.apiKey("token"); // token authentication

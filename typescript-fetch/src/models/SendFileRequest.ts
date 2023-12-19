@@ -35,10 +35,10 @@ export interface SendFileRequest {
      * need to add your number. 
      * 
      * USA example: 12020721369.
-     * @type {number}
+     * @type {string}
      * @memberof SendFileRequest
      */
-    phone?: number;
+    phone?: string;
     /**
      * HTTP link
      * *https://...*

@@ -13,26 +13,26 @@
       "name": "Channel",
       "description": "Manage your WhatsApp Business API channel"
     },
-	  {
-		  "name": "Webhooks",
-		  "description": "How to setup webhooks for the WhatsApp Business API"
-	  },
+    {
+      "name": "Webhooks",
+      "description": "How to setup webhooks for the WhatsApp Business API"
+    },
     {
       "name": "Messaging",
       "description": "This part of the documentation describes how to send and receive messages using the WhatsApp Business API"
     },
-	  {
-		  "name": "Templates",
-		  "description": "Template messaging via WhatsApp Business API"
-	  },
-	  {
-		  "name": "Products & Catalogs",
-		  "description": "How to build and send messages with single and multiple products"
-	  },
-	  {
-		  "name": "Media",
-		  "description": "Use the media node to upload, retrieve, or delete media"
-	  }
+    {
+      "name": "Templates",
+      "description": "Template messaging via WhatsApp Business API"
+    },
+    {
+      "name": "Products & Catalogs",
+      "description": "How to build and send messages with single and multiple products"
+    },
+    {
+      "name": "Media",
+      "description": "Use the media node to upload, retrieve, or delete media"
+    }
   ],
   "paths": {
     "/me": {
@@ -708,7 +708,7 @@
         "required": true,
         "example": 556123122026,
         "schema": {
-          "type": "integer"
+          "type": "string"
         }
       },
       "date": {
@@ -1015,7 +1015,7 @@
         "properties": {
           "phone": {
             "description": "**Required if chatId is not set**\n\nA phone number starting with the country code. You do not\nneed to add your number. \n\nUSA example: 12020721369.",
-            "type": "integer",
+            "type": "string",
             "example": "12020721369"
           }
         }
@@ -1537,6 +1537,7 @@
             },
             "required": [
               "lat",
+              "name",
               "lng"
             ]
           },
@@ -1831,7 +1832,10 @@
         "properties": {
           "params": {
             "type": "object",
-            "required": ["is_cart_enabled", "is_catalog_visible"],
+            "required": [
+              "is_cart_enabled",
+              "is_catalog_visible"
+            ],
             "properties": {
               "is_cart_enabled": {
                 "type": "boolean",
@@ -2379,12 +2383,13 @@
       "AddTemplate": {
         "required": true,
         "content": {
-          "application/x-www-form-urlencoded": {
+
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/AddTemplateRequest"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/AddTemplateRequest"
             }
@@ -2441,12 +2446,13 @@
       "RemoveTemplate": {
         "required": true,
         "content": {
-          "application/x-www-form-urlencoded": {
+
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/RemoveTemplateRequest"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/RemoveTemplateRequest"
             }
@@ -2456,12 +2462,12 @@
       "SendMessage": {
         "required": true,
         "content": {
-          "application/x-www-form-urlencoded": {
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/SendMessageRequest"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/SendMessageRequest"
             }
@@ -2471,12 +2477,12 @@
       "SendLocation": {
         "required": true,
         "content": {
-          "application/x-www-form-urlencoded": {
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/SendLocationRequest"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/SendLocationRequest"
             }
@@ -2486,12 +2492,12 @@
       "SendContact": {
         "required": true,
         "content": {
-          "application/x-www-form-urlencoded": {
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/SendContactRequest"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/SendContactRequest"
             }
@@ -2501,12 +2507,12 @@
       "SendTemplate": {
         "required": true,
         "content": {
-          "application/x-www-form-urlencoded": {
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/SendTemplateRequest"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/SendTemplateRequest"
             }
@@ -2516,12 +2522,12 @@
       "SendFile": {
         "required": true,
         "content": {
-          "application/x-www-form-urlencoded": {
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/SendFileRequest"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/SendFileRequest"
             }
@@ -2531,12 +2537,12 @@
       "SendList": {
         "required": true,
         "content": {
-          "application/x-www-form-urlencoded": {
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/SendListRequest"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/SendListRequest"
             }
@@ -2546,12 +2552,12 @@
       "SendProduct": {
         "required": true,
         "content": {
-          "application/x-www-form-urlencoded": {
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/SendProductRequest"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/SendProductRequest"
             }
@@ -2561,12 +2567,12 @@
       "SetMe": {
         "required": true,
         "content": {
-          "application/x-www-form-urlencoded": {
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/SetMeRequest"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/SetMeRequest"
             }
@@ -2576,12 +2582,12 @@
       "SetWebhook": {
         "required": true,
         "content": {
-          "application/x-www-form-urlencoded": {
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/WebhookUrl"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/WebhookUrl"
             }
@@ -2591,12 +2597,12 @@
       "UploadMedia": {
         "required": true,
         "content": {
-          "application/x-www-form-urlencoded": {
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/UploadMedia"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/UploadMedia"
             }
@@ -2605,12 +2611,12 @@
       },
       "ReadMessage": {
         "content": {
-          "application/x-www-form-urlencoded": {
+          "application/json": {
             "schema": {
               "$ref": "#/components/schemas/ReadMessageRequest"
             }
           },
-          "application/json": {
+          "application/x-www-form-urlencoded": {
             "schema": {
               "$ref": "#/components/schemas/ReadMessageRequest"
             }
