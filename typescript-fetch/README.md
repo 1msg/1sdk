@@ -1,4 +1,4 @@
-## one_msg_waba_sdk_ts@2.39.2
+## one_msg_waba_sdk_ts@2.39.4
 
 OneMsgWabaSdk - TypeScript client for one_msg_waba_sdk_ts
 [1MSG.IO](https://1msg.io/) is the perfect WhatsApp management tool for your business. With us you get full access to the official Whatsapp API/webhooks.

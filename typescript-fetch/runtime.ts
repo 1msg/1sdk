@@ -34,7 +34,7 @@ export class Configuration {
         this.configuration = configuration
     }
 
-    set config(configuration: Configuration) {
+    set config(configuration: ConfigurationParameters) {
         this.configuration = configuration;
     }
 
